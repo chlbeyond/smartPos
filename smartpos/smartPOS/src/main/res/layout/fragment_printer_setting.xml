@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/widget_stroke"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke"
+        android:padding="10dp"
+        android:text="@string/share_local_printer"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_bottom_text" />
+
+    <LinearLayout
+        android:id="@+id/local_usb_printer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_gray"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/setting_local_usb_printer"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <TextView
+            android:id="@+id/local_usb_printer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/app_info_text_size"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/local_gorge_printer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/setting_local_gorge_printer"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <TextView
+            android:id="@+id/local_gorge_printer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/app_info_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_local_baud_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_gray"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/setting_local_baud"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <TextView
+            android:id="@+id/setting_local_baud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/app_info_text_size"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+
+</LinearLayout>

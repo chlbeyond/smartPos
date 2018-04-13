@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263554"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tableRowSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"></TableRow>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <GridView
+        android:id="@+id/gridViewOrderDish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalScrollView1"
+
+        android:background="#9BAACB"
+        android:clickable="true"
+        android:columnWidth="@dimen/order_fragment_goods_item_columnWidth"
+        android:horizontalSpacing="@dimen/order_fragment_gridview_horizontalSpacing"
+        android:numColumns="auto_fit"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:verticalSpacing="@dimen/order_fragment_gridview_verticalSpacing"></GridView>
+
+    <!--<com.rainbow.common.view.AutoRecyclerView-->
+    <!--android:id="@+id/recyclerViewOrderDish"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:clickable="true"-->
+    <!--android:layout_below="@id/horizontalScrollView1"></com.rainbow.common.view.AutoRecyclerView>-->
+
+</RelativeLayout>

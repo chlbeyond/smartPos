@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cloud_url">http://api.test.sanyipos.com/shop/</string>
+    <string name="tenpay_url">http://pay.test.sanyipos.com//bill</string>
+    <string name="member_url">http://test.sanyipos.com/</string>
+    <string name="is_for_test">true</string>
+    <string name="alipay_url"></string>
+</resources>

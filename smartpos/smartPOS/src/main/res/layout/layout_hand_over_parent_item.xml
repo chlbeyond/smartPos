@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <TextView
+        android:id="@+id/textView_hand_over_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:gravity="center|left"
+        android:text="收银"
+        android:textColor="@color/Black"
+        android:textSize="21px" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_back"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/textView_order_table"
+            style="@style/OrderTopLeftFontField"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/order_fragment_table_name_hint"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_shop_close_textsize_textview" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/textViewTableName"
+            style="@style/OrderTopLeftFontField"
+            android:layout_width="wrap_content"
+            android:gravity="left|center"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView_order_table"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_shop_close_textsize_textview" />
+
+
+        <TextView
+            android:id="@+id/order_remark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/switch_table"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/order_remark"
+            android:text="@string/order_remark"
+            android:visibility="gone"
+            android:textColor="@color/title_table_background"
+            android:textSize="@dimen/main_menu_text_size" />
+
+        <LinearLayout
+            android:id="@+id/switch_table"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:clickable="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/switch_table" />
+
+            <TextView
+                android:id="@+id/textView_switch_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/order_fragment_switch_table"
+                android:textColor="@color/title_table_background"
+                android:textSize="@dimen/main_menu_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_order_sawtooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/sawtooth" />
+</RelativeLayout>

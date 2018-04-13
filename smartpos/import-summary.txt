@@ -1,0 +1,424 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+D:\android master\smartpos
+          -               
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From SmartPOS:
+* .gitignore
+* README.md
+* build.xml
+* proguard-project.txt
+* src\
+* src\android\
+* src\android\cashdrawer\
+* src\android\cashdrawer\CashDrawer.java
+* src\android\serialport\
+* src\android\serialport\SerialPort.java
+* src\android\serialport\SerialPortFinder.java
+* src\com\
+* src\com\qrcode\
+* src\com\qrcode\activity\
+* src\com\qrcode\activity\CaptureActivity.java
+* src\com\qrcode\bitmap\
+* src\com\qrcode\bitmap\InvertedLuminanceSource.java
+* src\com\qrcode\bitmap\LuminanceSource.java
+* src\com\qrcode\bitmap\PlanarYUVLuminanceSource.java
+* src\com\qrcode\camera\
+* src\com\qrcode\camera\AutoFocusCallback.java
+* src\com\qrcode\camera\CameraConfigurationManager.java
+* src\com\qrcode\camera\CameraManager.java
+* src\com\qrcode\camera\FlashlightManager.java
+* src\com\qrcode\camera\PreviewCallback.java
+* src\com\qrcode\decode\
+* src\com\qrcode\decode\CaptureActivityHandler.java
+* src\com\qrcode\decode\Constant.java
+* src\com\qrcode\decode\DecodeHandler.java
+* src\com\qrcode\decode\DecodeThread.java
+* src\com\qrcode\decode\FinishListener.java
+* src\com\qrcode\decode\InactivityTimer.java
+* src\com\rainbow\
+* src\com\rainbow\common\
+* src\com\rainbow\common\view\
+* src\com\rainbow\common\view\HorizontalListView.java
+* src\com\rainbow\common\view\MDMRadioButton.java
+* src\com\rainbow\common\view\MemberSlidingTabLayout.java
+* src\com\rainbow\common\view\MemberSlidingTabStrip.java
+* src\com\rainbow\common\view\MyCircleTextView.java
+* src\com\rainbow\common\view\MyDialog.java
+* src\com\rainbow\common\view\MyGridView.java
+* src\com\rainbow\common\view\MyListView.java
+* src\com\rainbow\common\view\ProhibitViewPager.java
+* src\com\rainbow\common\view\SlidingTabLayout.java
+* src\com\rainbow\common\view\SlidingTabStrip.java
+* src\com\rainbow\common\view\SquareImageView.java
+* src\com\rainbow\common\view\SquareTextView.java
+* src\com\rainbow\common\view\TableStatusSlidingTabLayout.java
+* src\com\rainbow\common\view\TableStatusSlidingTabStrip.java
+* src\com\rainbow\smartpos\
+* src\com\rainbow\smartpos\ActivityType.java
+* src\com\rainbow\smartpos\AndroidStartServiceOnBoot.java
+* src\com\rainbow\smartpos\BaseActivity.java
+* src\com\rainbow\smartpos\BootCompleted.java
+* src\com\rainbow\smartpos\CrashHandler.java
+* src\com\rainbow\smartpos\ExitManager.java
+* src\com\rainbow\smartpos\KitchenPrinterAdapter.java
+* src\com\rainbow\smartpos\MainScreenActivity.java
+* src\com\rainbow\smartpos\NavDrawerItem.java
+* src\com\rainbow\smartpos\NavDrawerListAdapter.java
+* src\com\rainbow\smartpos\SmartPosApplication.java
+* src\com\rainbow\smartpos\TableKeyBoardUtil.java
+* src\com\rainbow\smartpos\agentservice\
+* src\com\rainbow\smartpos\agentservice\AgentDiscoverService.java
+* src\com\rainbow\smartpos\agentservice\PrintingService.java
+* src\com\rainbow\smartpos\bill\
+* src\com\rainbow\smartpos\bill\Bill.java
+* src\com\rainbow\smartpos\bill\BillDetailAdapter.java
+* src\com\rainbow\smartpos\bill\BillFragment.java
+* src\com\rainbow\smartpos\bill\BillListAdapter.java
+* src\com\rainbow\smartpos\bill\BillOrderAdapter.java
+* src\com\rainbow\smartpos\bill\BillPaymentAdapter.java
+* src\com\rainbow\smartpos\check\
+* src\com\rainbow\smartpos\check\CheckDetailListAdapter.java
+* src\com\rainbow\smartpos\check\CheckFragment.java
+* src\com\rainbow\smartpos\check\CheckOrderAdapter.java
+* src\com\rainbow\smartpos\check\CheckPaymentAdapter.java
+* src\com\rainbow\smartpos\check\CheckPaymentCash.java
+* src\com\rainbow\smartpos\check\CheckPaymentOtherTypeAdapter.java
+* src\com\rainbow\smartpos\check\ChooseDiscountAdapter.java
+* src\com\rainbow\smartpos\check\ChoosePromotionAdapter.java
+* src\com\rainbow\smartpos\check\ChoosePromotionDialog.java
+* src\com\rainbow\smartpos\check\ChooseVoucherAdapter.java
+* src\com\rainbow\smartpos\check\ChooseVoucherDialog.java
+* src\com\rainbow\smartpos\check\DerateReasonAdapter.java
+* src\com\rainbow\smartpos\check\DerateReasonDialog.java
+* src\com\rainbow\smartpos\check\DiscountAdapter.java
+* src\com\rainbow\smartpos\check\MemberPwdPopWindow.java
+* src\com\rainbow\smartpos\check\NumPadPopWindow.java
+* src\com\rainbow\smartpos\check\PaymentModeAdapter.java
+* src\com\rainbow\smartpos\check\PromotionAdapter.java
+* src\com\rainbow\smartpos\check\QueryMemberDialog.java
+* src\com\rainbow\smartpos\check\SelectPromotion.java
+* src\com\rainbow\smartpos\check\SelectPromotionAdapter.java
+* src\com\rainbow\smartpos\check\TableClickListener.java
+* src\com\rainbow\smartpos\check\TenPayActiveService.java
+* src\com\rainbow\smartpos\check\TenPayPopWindow.java
+* src\com\rainbow\smartpos\check\VerifyMemberDialog.java
+* src\com\rainbow\smartpos\check\VoucherAdapter.java
+* src\com\rainbow\smartpos\check\VoucherCountPopWindow.java
+* src\com\rainbow\smartpos\check\VoucherService.java
+* src\com\rainbow\smartpos\check\VoucherSnPopWindow.java
+* src\com\rainbow\smartpos\common\
+* src\com\rainbow\smartpos\common\components\
+* src\com\rainbow\smartpos\common\components\BaseExecutor.java
+* src\com\rainbow\smartpos\common\components\ComponentExecutorPool.java
+* src\com\rainbow\smartpos\common\components\ComponentProviderInterface.java
+* src\com\rainbow\smartpos\common\components\LighttpdExecutor.java
+* src\com\rainbow\smartpos\common\components\MySqlExecutor.java
+* src\com\rainbow\smartpos\common\components\PHPExecutor.java
+* src\com\rainbow\smartpos\common\components\WebSocketExecutor.java
+* src\com\rainbow\smartpos\common\shell\
+* src\com\rainbow\smartpos\common\shell\Busybox.java
+* src\com\rainbow\smartpos\common\shell\SH.java
+* src\com\rainbow\smartpos\common\shell\SU.java
+* src\com\rainbow\smartpos\common\shell\Shell.java
+* src\com\rainbow\smartpos\common\shell\ShellOnMainThreadException.java
+* src\com\rainbow\smartpos\common\shell\StreamGobbler.java
+* src\com\rainbow\smartpos\gson\
+* src\com\rainbow\smartpos\gson\CollectionDeserializer.java
+* src\com\rainbow\smartpos\gson\DateTimeDeserializer.java
+* src\com\rainbow\smartpos\gson\GsonFactory.java
+* src\com\rainbow\smartpos\gson\IdArrayDeserializer.java
+* src\com\rainbow\smartpos\install\
+* src\com\rainbow\smartpos\install\APKUpdate.java
+* src\com\rainbow\smartpos\install\Constants.java
+* src\com\rainbow\smartpos\install\StartCoreServerProgressDialogFragment.java
+* src\com\rainbow\smartpos\login\
+* src\com\rainbow\smartpos\login\BaseDialog.java
+* src\com\rainbow\smartpos\login\ConnectHostFragment.java
+* src\com\rainbow\smartpos\login\DeviceRegistrationFragment.java
+* src\com\rainbow\smartpos\login\InputPasswordFragment.java
+* src\com\rainbow\smartpos\login\LoginActivity.java
+* src\com\rainbow\smartpos\login\PasswordFragment.java
+* src\com\rainbow\smartpos\login\SanyiPintServiceConnection.java
+* src\com\rainbow\smartpos\login\SearchLocalHost.java
+* src\com\rainbow\smartpos\login\ShopClosedFragment.java
+* src\com\rainbow\smartpos\login\ShopClosingFragment.java
+* src\com\rainbow\smartpos\login\ShopMFragment.java
+* src\com\rainbow\smartpos\manage\
+* src\com\rainbow\smartpos\manage\AddSlodOutFragment.java
+* src\com\rainbow\smartpos\manage\ChangeSlodOutCountDialog.java
+* src\com\rainbow\smartpos\manage\DaySettle.java
+* src\com\rainbow\smartpos\manage\HandoverAdapter.java
+* src\com\rainbow\smartpos\manage\HasSlodOutFragment.java
+* src\com\rainbow\smartpos\manage\HasStopSaleFragment.java
+* src\com\rainbow\smartpos\manage\ManagerFragment.java
+* src\com\rainbow\smartpos\manage\SlodOutDialog.java
+* src\com\rainbow\smartpos\manage\SlodOutDishAdapter.java
+* src\com\rainbow\smartpos\manage\SlodOutDishItemFragment.java
+* src\com\rainbow\smartpos\manage\SlodOutFragment.java
+* src\com\rainbow\smartpos\member\
+* src\com\rainbow\smartpos\member\ChooseRechargeStaffDialog.java
+* src\com\rainbow\smartpos\member\DatePopupWindow.java
+* src\com\rainbow\smartpos\member\MemberCreateFragment.java
+* src\com\rainbow\smartpos\member\MemberFragment.java
+* src\com\rainbow\smartpos\member\MemberPopupWindow.java
+* src\com\rainbow\smartpos\member\MemberQueryFragment.java
+* src\com\rainbow\smartpos\member\MemberQueryRechargeFragment.java
+* src\com\rainbow\smartpos\member\MemberQuerySpendRecordFragment.java
+* src\com\rainbow\smartpos\member\MemberRechargeFragment.java
+* src\com\rainbow\smartpos\member\MemberRecordCardFragment.java
+* src\com\rainbow\smartpos\member\MemberTextView.java
+* src\com\rainbow\smartpos\member\MemberTransferFragment.java
+* src\com\rainbow\smartpos\member\NoPermissionFragment.java
+* src\com\rainbow\smartpos\member\NumberPopWindow.java
+* src\com\rainbow\smartpos\member\PaymentModeAdapter.java
+* src\com\rainbow\smartpos\member\QueryRechargeMemberFragment.java
+* src\com\rainbow\smartpos\member\ReadMemberDialog.java
+* src\com\rainbow\smartpos\member\RechargeNumberPopWindow.java
+* src\com\rainbow\smartpos\member\RechargeStaffAdapter.java
+* src\com\rainbow\smartpos\order\
+* src\com\rainbow\smartpos\order\AdditiveAdapter.java
+* src\com\rainbow\smartpos\order\ChooseCookDialog.java
+* src\com\rainbow\smartpos\order\ChooseUnitDialog.java
+* src\com\rainbow\smartpos\order\CommonRemarkAdapter.java
+* src\com\rainbow\smartpos\order\CookMethodAdapter.java
+* src\com\rainbow\smartpos\order\CookMethodFragment.java
+* src\com\rainbow\smartpos\order\CookMethodItemLayout.java
+* src\com\rainbow\smartpos\order\CouponService.java
+* src\com\rainbow\smartpos\order\DetailOpLogsDialog.java
+* src\com\rainbow\smartpos\order\DishChangeOrderFragment.java
+* src\com\rainbow\smartpos\order\DishRemindOrderFragment.java
+* src\com\rainbow\smartpos\order\GeneralActionListener.java
+* src\com\rainbow\smartpos\order\HasChooseAdapter.java
+* src\com\rainbow\smartpos\order\HoldDishDialog.java
+* src\com\rainbow\smartpos\order\HoldDishFragment.java
+* src\com\rainbow\smartpos\order\IngredientAdapter.java
+* src\com\rainbow\smartpos\order\IngridientCountDialog.java
+* src\com\rainbow\smartpos\order\IngridientFragment.java
+* src\com\rainbow\smartpos\order\InputRemarkDialog.java
+* src\com\rainbow\smartpos\order\MyLinearLayout.java
+* src\com\rainbow\smartpos\order\OpMainFragment.java
+* src\com\rainbow\smartpos\order\OrderChangePrice.java
+* src\com\rainbow\smartpos\order\OrderDishAdapter.java
+* src\com\rainbow\smartpos\order\OrderDishButton.java
+* src\com\rainbow\smartpos\order\OrderDishDetailLayout.java
+* src\com\rainbow\smartpos\order\OrderDishFragment.java
+* src\com\rainbow\smartpos\order\OrderDishItemFragment.java
+* src\com\rainbow\smartpos\order\OrderFragment.java
+* src\com\rainbow\smartpos\order\OrderListAdapter.java
+* src\com\rainbow\smartpos\order\OrderOptionDialog.java
+* src\com\rainbow\smartpos\order\OrderSizeListAdapter.java
+* src\com\rainbow\smartpos\order\OtherFragment.java
+* src\com\rainbow\smartpos\order\ProcessDishFragment.java
+* src\com\rainbow\smartpos\order\ProgressDialogHandler.java
+* src\com\rainbow\smartpos\order\SearchDishFragment.java
+* src\com\rainbow\smartpos\order\SelectDishSet.java
+* src\com\rainbow\smartpos\order\SelectDishSetAdapter.java
+* src\com\rainbow\smartpos\order\SetItemDishAdapter.java
+* src\com\rainbow\smartpos\order\TableOperation.java
+* src\com\rainbow\smartpos\order\UnitAdapter.java
+* src\com\rainbow\smartpos\place\
+* src\com\rainbow\smartpos\place\Bean.java
+* src\com\rainbow\smartpos\place\ChangePriceDialog.java
+* src\com\rainbow\smartpos\place\ChooseTableAdapter.java
+* src\com\rainbow\smartpos\place\DishRecycleAdapter.java
+* src\com\rainbow\smartpos\place\GridViewItemDecoration.java
+* src\com\rainbow\smartpos\place\PlaceDetailFragment.java
+* src\com\rainbow\smartpos\place\PlaceDishAdapter.java
+* src\com\rainbow\smartpos\place\PlaceDishOptionDialog.java
+* src\com\rainbow\smartpos\place\PlaceSetItemDishAdapter.java
+* src\com\rainbow\smartpos\place\ReasonAdapter.java
+* src\com\rainbow\smartpos\place\ReturnDishReasonDialog.java
+* src\com\rainbow\smartpos\place\SelectServingTable.java
+* src\com\rainbow\smartpos\place\SetDishAdapter.java
+* src\com\rainbow\smartpos\place\SpaceItemDecoration.java
+* src\com\rainbow\smartpos\place\WeightDialog.java
+* src\com\rainbow\smartpos\printer\
+* src\com\rainbow\smartpos\printer\BufferedEscPrinter.java
+* src\com\rainbow\smartpos\printer\ComPrinter.java
+* src\com\rainbow\smartpos\printer\EscPrinter.java
+* src\com\rainbow\smartpos\printer\EscUtil.java
+* src\com\rainbow\smartpos\printer\LocalPrinter.java
+* src\com\rainbow\smartpos\printer\SanyiUSBDriver.java
+* src\com\rainbow\smartpos\printer\UsbPrinter.java
+* src\com\rainbow\smartpos\service\
+* src\com\rainbow\smartpos\service\PrintService.java
+* src\com\rainbow\smartpos\service\SendLogService.java
+* src\com\rainbow\smartpos\service\SocketPrintServer.java
+* src\com\rainbow\smartpos\setting\
+* src\com\rainbow\smartpos\setting\AboutSettingFragment.java
+* src\com\rainbow\smartpos\setting\CashBoxFragment.java
+* src\com\rainbow\smartpos\setting\ChoosePrinterAdapter.java
+* src\com\rainbow\smartpos\setting\GeneralSettingFragment1.java
+* src\com\rainbow\smartpos\setting\PrinterAdapter.java
+* src\com\rainbow\smartpos\setting\PrinterSettingFragment1.java
+* src\com\rainbow\smartpos\setting\SettingFragment.java
+* src\com\rainbow\smartpos\tablemanage\
+* src\com\rainbow\smartpos\tablemanage\CancelTableFragment.java
+* src\com\rainbow\smartpos\tablemanage\ChangeTableFragment.java
+* src\com\rainbow\smartpos\tablemanage\FirstStepFragment.java
+* src\com\rainbow\smartpos\tablemanage\MergeTableAdapter.java
+* src\com\rainbow\smartpos\tablemanage\MergeTableFragment.java
+* src\com\rainbow\smartpos\tablemanage\OpenAndMergeFragment.java
+* src\com\rainbow\smartpos\tablemanage\SecondStepFragment.java
+* src\com\rainbow\smartpos\tablemanage\SplitTableFragment.java
+* src\com\rainbow\smartpos\tablemanage\TableManageAdapter.java
+* src\com\rainbow\smartpos\tablemanage\TableManageFragment.java
+* src\com\rainbow\smartpos\tablemanage\TableUnMergeAdapter.java
+* src\com\rainbow\smartpos\tablemanage\ThreeStepFragment.java
+* src\com\rainbow\smartpos\tablemanage\UnMergeTableFragment.java
+* src\com\rainbow\smartpos\tablemanage\UnMergeTableGroupAdapter.java
+* src\com\rainbow\smartpos\tablemanage\UnMergeVPItemFragment.java
+* src\com\rainbow\smartpos\tablemanage\UnSplitTableFragment.java
+* src\com\rainbow\smartpos\tablestatus\
+* src\com\rainbow\smartpos\tablestatus\CheckableTableLayout.java
+* src\com\rainbow\smartpos\tablestatus\CombineTableOpenDialog.java
+* src\com\rainbow\smartpos\tablestatus\DailyProgressDialog.java
+* src\com\rainbow\smartpos\tablestatus\HandOverDialog.java
+* src\com\rainbow\smartpos\tablestatus\OpenTableDialog.java
+* src\com\rainbow\smartpos\tablestatus\ShopPrinterAdapter.java
+* src\com\rainbow\smartpos\tablestatus\TableAdapter.java
+* src\com\rainbow\smartpos\tablestatus\TableGroupItemFragment.java
+* src\com\rainbow\smartpos\tablestatus\TableStatusFragment.java
+* src\com\rainbow\smartpos\tablestatus\TableStatusIndicatorAdapter.java
+* src\com\rainbow\smartpos\tablestatus\TableTagView.java
+* src\com\rainbow\smartpos\tablestatus\TableTypeAdapter.java
+* src\com\rainbow\smartpos\tablestatus\TableViewPagerFragment.java
+* src\com\rainbow\smartpos\tablestatus\WebViewFragment.java
+* src\com\rainbow\smartpos\util\
+* src\com\rainbow\smartpos\util\AuthDialog.java
+* src\com\rainbow\smartpos\util\ChooseMemberDialog.java
+* src\com\rainbow\smartpos\util\ComparatorCombineTableByTag.java
+* src\com\rainbow\smartpos\util\Debug.java
+* src\com\rainbow\smartpos\util\DiscoverAgent.java
+* src\com\rainbow\smartpos\util\DisplayUtil.java
+* src\com\rainbow\smartpos\util\FileUtils.java
+* src\com\rainbow\smartpos\util\GenericHelper.java
+* src\com\rainbow\smartpos\util\Listener.java
+* src\com\rainbow\smartpos\util\Logger.java
+* src\com\rainbow\smartpos\util\MemberService.java
+* src\com\rainbow\smartpos\util\NanoHTTPD.java
+* src\com\rainbow\smartpos\util\NetworkUtil.java
+* src\com\rainbow\smartpos\util\NoRepeatClickUtils.java
+* src\com\rainbow\smartpos\util\NumberPad.java
+* src\com\rainbow\smartpos\util\OrderFragmentOrdetDetailCount.java
+* src\com\rainbow\smartpos\util\ParseConfiguration.java
+* src\com\rainbow\smartpos\util\PricePad.java
+* src\com\rainbow\smartpos\util\ReminderDialog.java
+* src\com\rainbow\smartpos\util\ShellOutputFormatter.java
+* src\com\rainbow\smartpos\util\StringResourceUtil.java
+* src\com\rainbow\smartpos\util\SwitchTableDialog.java
+* src\com\rainbow\smartpos\util\SystemUiHider.java
+* src\com\rainbow\smartpos\util\SystemUiHiderBase.java
+* src\com\rainbow\smartpos\util\SystemUiHiderHoneycomb.java
+* src\com\rainbow\smartpos\util\TenPayService.java
+* src\com\sanyipos\
+* src\com\sanyipos\smartpos\
+* src\com\sanyipos\smartpos\model\
+* src\com\sanyipos\smartpos\model\Restaurant.java
+* src\com\zbar\
+* src\com\zbar\lib\
+* src\com\zbar\lib\ZbarManager.java
+* tools\
+* tools\build.sh
+* tools\strings_url.xml.release
+* tools\strings_url.xml.test
+From sdk:
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+gson-2.3-sources.jar => com.google.code.gson:gson:2.3.1
+gson-2.3.jar => com.google.code.gson:gson:2.3
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.3.jar => version 2.3 in com.google.code.gson:gson:2.3
+gson-2.3.jar => version 2.3 in com.google.code.gson:gson:2.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In sdk:
+* AndroidManifest.xml => sdk\src\main\AndroidManifest.xml
+* assets\ => sdk\src\main\assets
+* libs\android-support-v7-recyclerview.jar => sdk\libs\android-support-v7-recyclerview.jar
+* libs\commons-codec-1.10.jar => sdk\libs\commons-codec-1.10.jar
+* libs\httpclient-4.1.3.jar => sdk\libs\httpclient-4.1.3.jar
+* libs\httpcore-4.1.4.jar => sdk\libs\httpcore-4.1.4.jar
+* libs\json.jar => sdk\libs\json.jar
+* libs\slidelibrary.jar => sdk\libs\slidelibrary.jar
+* libs\sugar-1.2.jar => sdk\libs\sugar-1.2.jar
+* res\ => sdk\src\main\res\
+* src\ => sdk\src\main\java\
+In SmartPOS:
+* AndroidManifest.xml => smartPOS\src\main\AndroidManifest.xml
+* assets\ => smartPOS\src\main\assets
+* libs\android-async-http-1.4.4.jar => smartPOS\libs\android-async-http-1.4.4.jar
+* libs\armeabi\libcash_drawer.so => smartPOS\src\main\jniLibs\armeabi\libcash_drawer.so
+* libs\armeabi\libserial_port.so => smartPOS\src\main\jniLibs\armeabi\libserial_port.so
+* libs\armeabi\libzbar.so => smartPOS\src\main\jniLibs\armeabi\libzbar.so
+* libs\commons-lite-1.14.jar => smartPOS\libs\commons-lite-1.14.jar
+* libs\jackson-core-2.2.3.jar => smartPOS\libs\jackson-core-2.2.3.jar
+* libs\sugar-1.2.jar => smartPOS\libs\sugar-1.2.jar
+* libs\zxing.jar => smartPOS\libs\zxing.jar
+* lint.xml => smartPOS\lint.xml
+* res\ => smartPOS\src\main\res\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

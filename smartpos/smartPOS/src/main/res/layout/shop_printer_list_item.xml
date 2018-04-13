@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="60px"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView_shop_printer_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:textColor="@color/Black"
+        android:gravity="center_vertical|left" />
+
+    <TextView
+        android:id="@+id/textView_shop_printer_item_ip"
+        android:layout_width="0dp"
+
+        android:textColor="@color/Black"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical|left" />
+
+    <TextView
+        android:id="@+id/textView_shop_printer_item_state"
+        android:layout_width="0dp"
+
+        android:textColor="@color/Black"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left" />
+
+
+    <ImageView
+        android:id="@+id/imageView_shop_printer_test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_weight="1" />
+
+</LinearLayout>

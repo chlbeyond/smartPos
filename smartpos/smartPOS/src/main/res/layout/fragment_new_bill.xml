@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/bill_fragment_left_linearlayout"-->
+    <!--android:layout_width="120px"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/button_bill_fragment_menu_detail"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="110px"-->
+    <!--android:background="@drawable/new_bill_left_menu_background"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--style="@style/new_bill_left_menu"-->
+    <!--android:drawableTop="@drawable/bill_fragment_left_menu_today_bill_selector"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/today_bill" />-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/button_bill_fragment_menu_analysis"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="110px"-->
+    <!--android:background="@drawable/new_bill_left_menu_background"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--style="@style/new_bill_left_menu"-->
+    <!--android:drawableTop="@drawable/bill_fragment_left_menu_today_business_analysis"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/business_analysis" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/button_bill_fragment_menu_operation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="110px"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/new_bill_left_menu_background"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--style="@style/new_bill_left_menu"-->
+    <!--android:drawableTop="@drawable/bill_fragment_billoperation_selector"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/operation_log" />-->
+    <!--</RelativeLayout>-->
+    <!--</RadioGroup>-->
+
+    <LinearLayout
+        android:id="@+id/bill_fragment_mid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/bill_fragment_mid_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@color/bill_fragment_mid_top">
+
+                <TextView
+                    android:id="@+id/textView_bill_fragment_spend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="消费金额 : 0 "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+                <TextView
+                    android:id="@+id/textView_bill_fragment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/textView_bill_fragment_spend"
+                    android:text="单数 ：0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+                <TextView
+                    android:id="@+id/textView_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:text="排序"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/bill_fragment_mid_2_background"
+                android:gravity="center">
+
+                <include layout="@layout/layout_recycler_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/null_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/null_content"
+                    android:textColor="#AAAAAA"
+                    android:textSize="@dimen/table_status_bottom_text" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/new_bill_fragment_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/op_dialog_button_layout_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_bill_fragment_bill_detail"
+                    android:layout_width="150px"
+                    android:layout_height="40px"
+                    android:background="@drawable/left_while_borde_rounded_focused"
+                    android:text="@string/bill_detail"
+                    android:textColor="@color/white"
+                    android:textSize="21px" />
+
+                <Button
+                    android:id="@+id/button_bill_fragment_bill_operation"
+                    android:layout_width="150px"
+                    android:layout_height="40px"
+                    android:background="@drawable/right_while_borde_rounded"
+                    android:text="@string/bill_operation"
+                    android:textColor="@color/title_login_background"
+                    android:textSize="21px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/bill_fragment_interval" />
+
+            <ListView
+                android:id="@+id/listView_new_bill"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_weight="15"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@color/order_price_total_bg"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button_bill_fragment_print"
+                    android:layout_width="0dp"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/print"
+                    android:textColor="@color/white"
+                    android:textSize="21px" />
+
+                <Button
+                    android:id="@+id/button_bill_fragment_reverse"
+                    android:layout_width="0dp"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/reverse_bill"
+                    android:textColor="@color/white"
+                    android:textSize="21px" />
+
+                <Button
+                    android:id="@+id/button_bill_fragment_invoice"
+                    android:layout_width="0dp"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="发票"
+                    android:textColor="@color/white"
+                    android:textSize="21px" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

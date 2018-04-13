@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1F6FC"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/textView_listView_detail_sales_group_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/textView_listView_detail_sales_group_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_fragment_text" />
+
+    <TextView
+        android:id="@+id/textView_listView_detail_sales_group_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/textView_listView_detail_sales_group_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_fragment_text" />
+
+    <TextView
+        android:id="@+id/textView_listView_detail_sales_group_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_fragment_text" />
+
+</LinearLayout>

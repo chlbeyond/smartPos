@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/op_dialog_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/order_with_self"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/button_bg_with_coner"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/order_with_self" />
+
+        <TextView
+            android:id="@+id/auto_slodout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/order_with_self"
+            android:textSize="@dimen/table_status_fragment_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="20px"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/order_with_all"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/button_bg_with_coner"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/order_with_all" />
+
+        <TextView
+            android:id="@+id/slodout_longtime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/order_with_all"
+            android:textSize="@dimen/table_status_fragment_text" />
+    </LinearLayout>
+
+
+</LinearLayout>

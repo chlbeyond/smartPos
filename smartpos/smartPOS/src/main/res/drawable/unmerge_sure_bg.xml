@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="3dip" />
+            <solid android:color="#36558C" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="3dip" />
+            <solid android:color="#A5C1F3" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#4581ED" />
+            <corners android:radius="3dip" />
+        </shape>
+    </item>
+
+</selector>

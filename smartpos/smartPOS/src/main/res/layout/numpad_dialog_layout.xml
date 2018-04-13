@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPayment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tableRowCheckPaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/check_round_layout_shape"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewCheckPaymentType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="现金"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textViewCheckPaying"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="找零"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textViewCheckPayChange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="right|center_vertical"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/table_status_fragment_text" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/check_pad_round_layout_shape"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/layoutPaymentCaculator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="2">
+
+                <TableRow
+                    android:id="@+id/TableRow08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+
+                    <Button
+                        android:id="@+id/buttonNumPad7"
+                        style="@style/PaymentNumberButton"
+                        android:text="7" />
+
+
+                    <Button
+                        android:id="@+id/buttonNumPad8"
+                        style="@style/PaymentNumberButton"
+                        android:text="8" />
+
+
+                    <Button
+                        android:id="@+id/buttonNumPad9"
+                        style="@style/PaymentNumberButton"
+                        android:text="9" />
+
+                    <ImageButton
+                        android:id="@+id/buttonNumPadC"
+                        style="@style/PaymentNumberButton"
+                        android:background="@drawable/auth_delete_btn_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/number_back_pad" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow07"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonNumPad4"
+                        style="@style/PaymentNumberButton"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/buttonNumPad5"
+                        style="@style/PaymentNumberButton"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/buttonNumPad6"
+                        style="@style/PaymentNumberButton"
+                        android:text="6" />
+
+                    <ImageButton
+                        android:id="@+id/buttonNumPadClear"
+                        style="@style/PaymentNumberButton"
+                        android:background="@drawable/auth_delete_btn_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/number_delete_pad" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonNumPad1"
+                        style="@style/PaymentNumberButton"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/buttonNumPad2"
+                        style="@style/PaymentNumberButton"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/buttonNumPad3"
+                        style="@style/PaymentNumberButton"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/buttonNumPadAll"
+                        style="@style/PaymentNumberButton"
+                        android:background="@drawable/auth_delete_btn_bg"
+                        android:text="全额" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow09"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+
+                    <Button
+                        android:id="@+id/buttonNumPad0"
+                        style="@style/PaymentNumberButton"
+                        android:text="0" />
+
+
+                    <Button
+                        android:id="@+id/buttonNumPadTwoZero"
+                        style="@style/PaymentNumberButton"
+                        android:text="00" />
+
+
+                    <Button
+                        android:id="@+id/buttonNumPadPoint"
+                        style="@style/PaymentNumberButton"
+                        android:text="." />
+
+                    <Button
+                        android:id="@+id/buttonNumPadSure"
+                        style="@style/PaymentNumberButton"
+                        android:textColor="@color/white"
+                        android:background="@drawable/quarity_button_selector"
+                        android:text="@string/sure" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 点菜操作dialog的界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@android:style/Theme.Dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/op_dialog_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/dialog_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/op_dialog_button_layout_bg">
+
+        <TextView
+            android:id="@+id/op_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选项"
+            android:textSize="@dimen/dialog_title_text_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iv_close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:clickable="true"
+            android:padding="@dimen/cancel_dialog_btn_padding"
+            android:src="@drawable/new_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/number_pad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.rainbow.common.view.MyListView
+                    android:id="@+id/mlv_orderatt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:divider="@null" />
+
+                <TextView
+                    android:id="@+id/childfood_name_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/op_menu_child_food"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <com.rainbow.common.view.MyListView
+                    android:id="@+id/childfood_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#FFF"
+                    android:layout_marginBottom="20dp"
+                    android:dividerHeight="1px"
+                    android:visibility="gone"></com.rainbow.common.view.MyListView>
+
+                <LinearLayout
+                    android:id="@+id/editPriceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/price_current"
+                        android:textSize="@dimen/table_status_bottom_text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/editPrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/remark_edit_ng"
+                                android:gravity="right|center_vertical"
+                                android:hint="0.00"
+                                android:padding="@dimen/order_fragment_op_dialog_edit_padding"
+                                android:textSize="@dimen/main_menu_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@id/editPrice"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="@string/default_price"
+                                android:textSize="@dimen/main_menu_text_size" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_private_cookmethed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/private_cookmethed"
+                    android:textSize="18sp" />
+
+                <com.rainbow.common.view.MyGridView
+                    android:id="@+id/private_cookmethod_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/order_fragment_op_dialog_cook_item_width"
+                    android:focusable="false"
+                    android:layout_marginBottom="20dp"
+                    android:focusableInTouchMode="false"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="5dp"></com.rainbow.common.view.MyGridView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/op_menu_cookmethod"
+                    android:textSize="18sp" />
+
+                <com.rainbow.common.view.MyGridView
+                    android:id="@+id/cookmethod_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/order_fragment_op_dialog_cook_item_width"
+                    android:focusable="false"
+                    android:layout_marginBottom="20dp"
+                    android:focusableInTouchMode="false"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="5dp"></com.rainbow.common.view.MyGridView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/op_menu_ingredient"
+                    android:textSize="18sp" />
+
+                <com.rainbow.common.view.MyGridView
+                    android:id="@+id/ingredient_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/order_fragment_op_dialog_cook_item_width"
+                    android:focusable="false"
+                    android:layout_marginBottom="20dp"
+                    android:focusableInTouchMode="false"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="5dp"></com.rainbow.common.view.MyGridView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/common_use_remark"
+                    android:textColor="@color/order_fragment_price_textcolor"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <com.rainbow.common.view.MyGridView
+                    android:id="@+id/common_use_remark_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/order_fragment_op_dialog_cook_item_width"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginBottom="20dp"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="5dp"
+                    android:visibility="gone"></com.rainbow.common.view.MyGridView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/op_menu_custorm"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/remark_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/remark_edit_ng"
+                        android:hint="@string/please_input_dish_remark"
+                        android:padding="@dimen/order_fragment_op_dialog_edit_padding"
+                        android:textSize="@dimen/main_menu_text_size" />
+
+                    <tagview.TagCloudView
+                        android:id="@+id/tag_cloud_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tcvBorder="8dp"
+                        app:tcvCanTagClick="true"
+                        app:tcvItemBorderHorizontal="8dp"
+                        app:tcvItemBorderVertical="6dp"
+                        app:tcvTextColor="#123455" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/op_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/sure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/White"
+                android:textSize="@dimen/main_menu_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+</LinearLayout>

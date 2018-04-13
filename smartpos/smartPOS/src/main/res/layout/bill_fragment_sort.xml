@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/bill_fragment_sort_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bill_fragment_sort_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sort_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="@color/check_price_color"></View>
+
+        <TextView
+            android:id="@+id/bill_fragment_sort_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sort_promotion"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="@color/check_price_color"></View>
+
+        <TextView
+            android:id="@+id/bill_fragment_sort_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sort_discount"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="@color/check_price_color"></View>
+
+        <TextView
+            android:id="@+id/bill_fragment_sort_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/cancel_sort"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <TextView
+            android:id="@+id/bill_fragment_sort_member"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sort_member"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_status_bottom_text"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

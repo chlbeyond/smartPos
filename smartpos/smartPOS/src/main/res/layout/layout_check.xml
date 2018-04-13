@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/check_right_layout"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:background="@drawable/order_fragment_list_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/new_s_back"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/member_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selector"
+                    android:clickable="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/verify_member"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+
+                <include
+                    android:id="@+id/include_member"
+                    layout="@layout/layout_member"></include>
+
+                <LinearLayout
+                    android:id="@+id/sales_promotion_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sales_promotion"
+                        android:textColor="@color/check_bill_amount_number_text_color"
+                        android:textSize="@dimen/table_status_bottom_text" />
+
+                    <com.rainbow.common.view.HorizontalListView xmlns:widget="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/sales_promotion_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/order_fragment_op_dialog_cook_item_height"
+                        android:layout_marginTop="10dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:numColumns="auto_fit"
+                        widget:dividerWidth="5dp"></com.rainbow.common.view.HorizontalListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/voucher_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/voucher_info"
+                        android:textColor="@color/check_bill_amount_number_text_color"
+                        android:textSize="@dimen/table_status_bottom_text" />
+
+                    <com.rainbow.common.view.HorizontalListView xmlns:widget="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/voucher_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/order_fragment_op_dialog_cook_item_height"
+                        android:layout_marginTop="10dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:numColumns="auto_fit"
+                        widget:dividerWidth="5dp"></com.rainbow.common.view.HorizontalListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/return_dish_text_enabled_false"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/payment_method_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/please_choose_payment_method"
+                        android:textColor="@color/check_bill_amount_number_text_color"
+                        android:textSize="@dimen/table_status_bottom_text" />
+
+                    <com.rainbow.common.view.MyGridView
+                        android:id="@+id/payment_method_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:columnWidth="@dimen/order_fragment_op_dialog_cook_item_width"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="auto_fit"
+                        android:verticalSpacing="10dp"></com.rainbow.common.view.MyGridView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_check_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/place_detail_first_button_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/place_dish_btn_padding"
+            android:paddingTop="@dimen/place_dish_btn_padding"
+            android:text="@string/check"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <Button
+            android:id="@+id/preprint_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/check_btn"
+            android:layout_weight="1"
+            android:background="@drawable/place_detail_button_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/place_dish_btn_padding"
+            android:paddingTop="@dimen/place_dish_btn_padding"
+            android:text="@string/print"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_bottom_text" />
+    </RelativeLayout>
+</LinearLayout>

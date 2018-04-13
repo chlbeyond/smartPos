@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!--
+             <item name="android:windowContentOverlay">@null</item>
+       
+        <item name="android:colorBackground">@color/Win8Bule</item>
+         <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/main_bg</item>
+         <item name="android:background">@color/main_bg</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+        <item name="android:actionBarStyle">@style/Theme.AppCompat.NoActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/MyActionBar.MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/White</item>
+        <!-- <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item> -->
+        <item name="@attr/commonButtonStyle">@style/CommonButton</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/table_status_top_bg</item>
+        <item name="android:selectableItemBackground">@drawable/actionbar_menu_item_selector</item>
+        <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="MyActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#F0F</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/MenuTextStyletextsize</item>
+    </style>
+
+    <style name="MyActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ImageButton" parent="android:Widget.Button">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">170dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/table_button_shape</item>
+    </style>
+
+    <style name="ImageButtonSmall" parent="ImageButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="TableButton" parent="android:Widget.Button">
+        <item name="android:width">50dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/table_button_shape</item>
+    </style>
+
+    <!-- used in order fragment -->
+    <style name="OrderTopLeftFontLabel" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/table_status_bottom_text</item>
+    </style>
+
+    <style name="OrderTopLeftFontField" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:gravity">left</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/table_status_bottom_text</item>
+    </style>
+
+    <style name="OrderBottomLeftFontHeading" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/check_fragment_detail_text</item>
+    </style>
+
+    <style name="OrderBottomLeftFontList" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/table_status_bottom_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- used in check fragment -->
+    <style name="CheckFont" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/check_fragment_detail_text</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="CheckButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/check_payment_button_bg</item>
+    </style>
+
+    <style name="CheckOptionButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/main_action_button_selector</item>
+    </style>
+
+    <style name="CommonButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/common_round_button_shape</item>
+    </style>
+
+    <style name="OrderOptionButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/table_report_button_selector</item>
+    </style>
+
+    <style name="CheckListHeaderFont" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CheckPaymentMethodButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#4d6070</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:minWidth">40dip</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:background">@drawable/check_button</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="CheckCaculatorButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#4d6070</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:background">@drawable/check_button_num</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="NumberPadButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#4d6070</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:background">@drawable/order_option_confirm_button_selector</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="MainActionButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:background">@drawable/table_report_button_selector</item>
+        <item name="android:padding">@dimen/order_fragment_gridview_horizontalSpacing</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="order_fragment_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:background">@drawable/table_report_button_selector</item>
+        <item name="android:padding">@dimen/order_fragment_gridview_horizontalSpacing</item>
+    </style>
+
+    <style name="BillButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/Bill_fragment_Button</item>
+        <item name="android:background">@drawable/table_report_button_selector</item>
+        <item name="android:padding">@dimen/order_fragment_gridview_horizontalSpacing</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="LoginButton" parent="android:Widget.Button">
+        <item name="android:textColor">@drawable/login_button_text_color_selector</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/login_button_text</item>
+        <item name="android:background">@drawable/number_button_selector</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="android:layout_margin">5dp</item> -->
+    </style>
+
+    <style name="NumberButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/login_button_text</item>
+        <item name="android:background">@drawable/open_table_dialog_btn_bg</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="android:layout_margin">5dp</item> -->
+    </style>
+
+    <style name="PaymentNumberButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/title_table_background</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/dailystat_text</item>
+        <item name="android:background">@drawable/auth_number_btn_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <!-- <item name="android:layout_margin">5dp</item> -->
+    </style>
+
+    <style name="ConfirmButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/login_button_text_color_selector</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/confirm_button_text</item>
+        <item name="android:background">@drawable/confirm_button_selector</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="TableReportButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text3</item>
+        <item name="android:background">@drawable/table_report_button_selector</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="OKButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/voucher_service_button_size</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="CancelButton" parent="android:Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/voucher_service_button_size</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!-- used in table status bottom -->
+    <style name="TableStatusBottomText" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/table_status_bottom_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- used in table status bottom -->
+    <style name="TableStatusBottomTextType" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/table_status_bottom_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- used in table status right button -->
+    <style name="TableStatusRightButton" parent="android:Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/table_status_button_color_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/bill_fragment_title_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/table_status_button_selector</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/White</item>
+        <item name="android:alpha">0.25</item>
+    </style>
+
+    <style name="OrderFragmentButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">0.5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="dialog">
+        <item name="android:fullDark">@drawable/dialog_body</item>
+        <item name="android:topDark">@drawable/dialog_title</item>
+        <item name="android:centerDark">@drawable/dialog_body</item>
+        <item name="android:bottomDark">@drawable/dialog_footer</item>
+        <item name="android:fullBright">@drawable/dialog_body</item>
+        <item name="android:centerBright">@drawable/dialog_body</item>
+        <item name="android:topBright">@drawable/dialog_title</item>
+        <item name="android:bottomBright">@drawable/dialog_footer</item>
+        <item name="android:bottomMedium">@drawable/dialog_footer</item>
+        <item name="android:centerMedium">@drawable/dialog_body</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+    </style>
+
+    <style name="AlertDialogButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primarycolor</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/title_text2</item>
+        <item name="android:background">@drawable/alertdialog_button</item>
+        <item name="android:padding">@dimen/order_fragment_gridview_horizontalSpacing</item>
+    </style>
+
+    <style name="manage_btn_linearlayout_style">
+        <item name="android:layout_width">@dimen/table_manage_button_horizontal_margin</item>
+        <item name="android:layout_height">@dimen/table_manage_button_vertical_margin</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="table_manage_btn_linearlayout_style">
+        <item name="android:layout_width">@dimen/table_manage_button_horizontal_margin</item>
+        <item name="android:layout_height">@dimen/table_manage_button_vertical_margin</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="manage_btn_image_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="table_manage_btn_image_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="manage_btn_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="table_manage_sure_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+        <item name="android:textColor">@color/primarycolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_bg_recharge</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- 会员的会员创建等按钮的style -->
+    <style name="member_manager_radiobutton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/member_manager_bg_selector</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+    </style>
+    <!-- 会员充值的list的title -->
+    <style name="member_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/fragment_check_money</item>
+    </style>
+    <!-- 翻页 -->
+    <style name="member_paging_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/fragment_check_money</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textColor">#1575b0</item>
+    </style>
+    <!-- 会员充值的每一行的Linearlayout -->
+    <style name="member_recharge_line_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/member_create_line_margin</item>
+        <item name="android:layout_marginBottom">@dimen/member_create_line_margin</item>
+    </style>
+    <!-- 会员充值的每一项的Linearlayout -->
+    <style name="member_recharge_each_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="member_psd_change_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="member_psd_change_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+    </style>
+
+    <style name="member_psd_change_edit_style">
+        <item name="android:background">@drawable/member_edit_stroke</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+    </style>
+
+    <style name="member_create_each_style" parent="member_recharge_each_style">
+        <item name="android:layout_margin">15dp</item>
+    </style>
+    <!-- 会员充值的每一项的提示语 -->
+    <style name="member_recharge_each_hint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/keyboard_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+    </style>
+
+    <style name="member_recharge_each_text">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+    </style>
+    <!-- 会员充值的每一项的输入框 -->
+    <style name="member_recharge_each_edit">
+        <item name="android:background">@drawable/member_edit_stroke</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/recharge_edit_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/table_status_fragment_text</item>
+    </style>
+
+    <!-- 会员创建的按钮 -->
+    <style name="member_create_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- 主界面菜单radiobutton -->
+    <style name="main_title_radioButton">
+        <item name="android:background">@drawable/table_status_top_background</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/table_status_bottom</item>
+    </style>
+
+    <style name="OpDialogTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+
+    </style>
+
+    <!--下单界面菜品选项里面的操作button -->
+    <style name="place_dish_option_button">
+        <item name="android:background">@drawable/common_remark_selector</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/place_dish_btn_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">@dimen/main_menu_text_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <!--下单界面里面的转菜操作layout -->
+    <style name="place_fragment_change_dish_layout">
+        <item name="android:background">@drawable/place_fragment_op_btn_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--下单界面里面的转菜操作text -->
+    <style name="place_fragment_change_dish_text">
+        <item name="android:background">@drawable/place_fragment_op_btn_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@drawable/place_fragment_op_btn_textcolor_selector</item>
+        <item name="android:textSize">@dimen/main_menu_text_size</item>
+    </style>
+
+    <style name="new_bill_left_menu">
+        <item name="android:layout_marginTop">10px</item>
+        <item name="android:layout_marginBottom">10px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/bill_fragment_left_text_selector</item>
+    </style>
+
+    <style name="mainactivity_tab_menu">
+        <item name="android:textColor">@drawable/menu_text_selector</item>
+        <item name="android:textSize">@dimen/table_status_bottom_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="App.Theme.Light.Title.White" parent="Theme.AppCompat.Light">
+
+        <item name="android:actionBarStyle">@style/actionBarStyleWhite</item>
+    </style>
+
+    <style name="actionBarStyleWhite" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/TextAppearance.Holo.Widget.ActionBar.Title.Own
+        </item>
+    </style>
+
+    <style name="TextAppearance.Holo.Widget.ActionBar.Title.Own" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

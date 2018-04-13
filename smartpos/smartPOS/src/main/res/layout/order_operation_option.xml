@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewOrderItemDishName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/table_status_fragment_text" />
+
+        <Button
+            android:id="@+id/buttonOpenTableMinusSign"
+            style="@style/CommonButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="－"
+            android:textSize="@dimen/order_operation_option_minus" />
+
+        <EditText
+            android:id="@+id/editTextNumOfPeopleServed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_fragment_text">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonOpenTablePlusSign"
+            style="@style/CommonButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="＋"
+            android:textSize="@dimen/order_operation_option_minus" />
+    </TableRow>
+    <!--
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp" -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonCancelOpenTable"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_background_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/buttonOpenTable"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/btn_background_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </TableRow>
+
+</LinearLayout>

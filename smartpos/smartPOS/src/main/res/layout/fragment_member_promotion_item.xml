@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/order_fragment_goods_item_columnWidth"
+    android:layout_height="@dimen/order_fragment_goods_item_height"
+    android:background="@drawable/dish_detail_bg_selector"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_member_promotion_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:textColor="#000"
+        android:textSize="@dimen/main_menu_text_size" />
+
+    <TextView
+        android:id="@+id/textView_member_promotion_chargegift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:textColor="@color/keyboard_text_color"
+        android:textSize="@dimen/dish_sliod_out_mark_textsize" />
+</FrameLayout>

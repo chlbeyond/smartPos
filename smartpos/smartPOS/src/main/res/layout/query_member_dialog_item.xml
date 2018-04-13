@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/member_sn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_type"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_moblie"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_cardNo"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_balance"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_recharge_balance"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+
+        <TextView
+            android:id="@+id/member_gift_balance"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/voucher_service_title" />
+    </LinearLayout>
+
+</LinearLayout>

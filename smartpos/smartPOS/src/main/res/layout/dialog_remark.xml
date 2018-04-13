@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@android:style/Theme.Dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/op_dialog_bg"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/op_dialog_button_layout_bg">
+
+        <TextView
+            android:id="@+id/op_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选项"
+            android:textSize="@dimen/dialog_title_text_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iv_close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:clickable="true"
+            android:padding="@dimen/cancel_dialog_btn_padding"
+            android:src="@drawable/new_cancel" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="8.1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rainbow.common.view.MyListView
+                android:layout_width="match_parent"
+                android:id="@+id/mlv_orderatt"
+                android:divider="@null"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/op_menu_custorm"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+                <EditText
+                    android:id="@+id/remark_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/remark_edit_ng"
+                    android:hint="@string/please_input_dish_remark"
+                    android:padding="@dimen/order_fragment_op_dialog_edit_padding"
+                    android:textSize="@dimen/main_menu_text_size" />
+
+                <tagview.TagCloudView
+                    android:id="@+id/tag_cloud_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tcvBorder="8dp"
+                    app:tcvCanTagClick="true"
+                    app:tcvItemBorderHorizontal="8dp"
+                    app:tcvItemBorderVertical="6dp"
+                    app:tcvTextColor="#123455" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/op_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/sure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/White"
+                android:textSize="@dimen/main_menu_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</LinearLayout>

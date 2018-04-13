@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gridViewOrderDish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:columnWidth="@dimen/table_status_fragment_item_columnWidth"
+        android:horizontalSpacing="@dimen/order_fragment_gridview_horizontalSpacing"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/order_fragment_gridview_verticalSpacing"></GridView>
+
+</LinearLayout>

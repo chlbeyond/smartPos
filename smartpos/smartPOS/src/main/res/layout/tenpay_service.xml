@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#33B5E5"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberPadContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/AliceBlue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/promptText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="授权验证"
+                android:textSize="@dimen/voucher_service_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextInputValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="请输入"
+                android:inputType="none"
+                android:textColor="#67788d"
+                android:textSize="@dimen/voucher_service_title">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="8"
+            android:background="@color/White"
+            android:padding="5dp">
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/num_dialog_magin">
+
+                        <Button
+                            android:id="@+id/buttonNumPad1"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="1" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad2"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="2" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad3"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/buttonNumPad4"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="4" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad5"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="5" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad6"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/buttonNumPad7"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="7" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad8"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="8" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad9"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/num_dialog_magin">
+
+                        <ImageButton
+                            android:id="@+id/buttonNumPadCancel"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:src="@drawable/login_cancel_selector" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad0"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:text="0" />
+
+                        <ImageButton
+                            android:id="@+id/buttonNumPadDelete"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/num_dialog_width"
+                            android:layout_height="@dimen/num_dialog_height"
+                            android:src="@drawable/login_delete_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressBarVerify"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNumberPadCancel"
+            style="@style/CancelButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/buttonNumberPadOk"
+            style="@style/OKButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.rainbow.common.view.HorizontalListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:widget="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listViewSetItemDish"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/set_dish_item_height"
+        android:focusable="false"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        widget:dividerWidth="4dp">
+
+    </com.rainbow.common.view.HorizontalListView>
+
+</LinearLayout>

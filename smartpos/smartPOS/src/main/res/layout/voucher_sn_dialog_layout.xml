@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/check_pad_round_layout_shape"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/layoutPaymentCaculator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical">
+
+            <TableRow
+                android:id="@+id/TableRow08"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/buttonNumPad7"
+                    style="@style/PaymentNumberButton"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/buttonNumPad8"
+                    style="@style/PaymentNumberButton"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/buttonNumPad9"
+                    style="@style/PaymentNumberButton"
+                    android:text="9" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow07"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/buttonNumPad4"
+                    style="@style/PaymentNumberButton"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/buttonNumPad5"
+                    style="@style/PaymentNumberButton"
+                    android:text="5" />
+
+
+                <Button
+                    android:id="@+id/buttonNumPad6"
+                    style="@style/PaymentNumberButton"
+                    android:text="6" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/buttonNumPad1"
+                    style="@style/PaymentNumberButton"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/buttonNumPad2"
+                    style="@style/PaymentNumberButton"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/buttonNumPad3"
+                    style="@style/PaymentNumberButton"
+                    android:text="3" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow09"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/buttonNumPadDelete"
+                    style="@style/PaymentNumberButton"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/number_back_pad" />
+
+                <Button
+                    android:id="@+id/buttonNumPad0"
+                    style="@style/PaymentNumberButton"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/buttonNumPadClear"
+                    style="@style/PaymentNumberButton"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/number_delete_pad" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/op_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/sure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/White"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</LinearLayout>

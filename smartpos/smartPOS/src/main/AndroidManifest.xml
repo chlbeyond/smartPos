@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rainbow.smartpos"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:replace="android:versionName,android:versionCode">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:name=".SmartPosApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|keyboard"
+
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo_action_bar"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <!--
+        <activity
+            android:name="com.go2smartphone.smartpos.MainScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.go2smartphone.smartpos.MainScreenActivity" />
+        </activity>
+
+
+
+
+        -->
+
+        <activity
+            android:name="com.rainbow.smartpos.MainScreenActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|screenSize"
+            android:label="@string/app_name"
+
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar.FullScreen">
+
+        </activity>
+        <activity
+            android:name="com.qrcode.activity.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".member.MemberFragment"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.ReportActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".sold.SoldFragment"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.ChangePsdActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".slidingtutorial.SlidingTutorial"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="filepicker.FilePickerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".BootCompleted"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".AndroidStartServiceOnBoot"></service>
+        <service android:name=".service.PrintService"></service>
+
+        <receiver
+            android:name="com.rainbow.smartpos.login.LoginActivity$UnLockStaticReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1100">
+                <action android:name="android.intent.action.NEW_UNLOCK_CastReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.rainbow.smartpos.login.LoginActivity$UsbDisconnected"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.rainbow.smartpos.login.LoginActivity$UsbConnected"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.SendLogService"></service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5779f95a67e58e06b100219b"></meta-data>
+        <meta-data
+            android:name="design_width"
+            android:value="1920"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1020"></meta-data>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

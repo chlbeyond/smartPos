@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_print"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="小票打印机"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_setting_print"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center"
+                    android:textColor="@color/Black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_share_print"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="共享USB打印机"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_share_print"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center"
+                    android:textColor="@color/Black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_com_share_print"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="共享串口打印机"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_com_share_print"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center"
+                    android:textColor="@color/Black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_com_ele_balance"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="设置电子秤"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_com_ele_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center"
+                    android:textColor="@color/Black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_logoff"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="下单后自动注销"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/textView_local_setting_logoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_preprint"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="预打印后返回台况"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/textView_local_setting_preprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+            
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="禁用系统软键盘"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_local_setting_keyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_fastmode"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="快餐模式"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_local_setting_fast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_fast_input_number"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="快餐模式是否输入取餐号"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_local_setting_fast_input_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_presentation"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="副屏设置"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_setting_presentation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_local_setting_ledpresentation"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="数字客显设置"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_setting_ledpresentation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="服务器地址"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/textView_local_setting_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center"
+                    android:text="192.168.1.228"
+                    android:textColor="@color/Black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EFEFEF" />
+
+
+            <RelativeLayout
+
+                android:id="@+id/relativeLayout_local_setting_default_order"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="默认拼音点菜"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_local_setting_spell_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/relativeLayout_local_setting_takeout_voice_off"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="关闭外卖语音提示"
+                    android:textColor="@color/Black"
+                    android:textSize="24px" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_local_setting_takeout_voice_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="table_fastmode_set_no">设置取餐号</string>
+    <string name="table_num_of_people_served">人数</string>
+    <string name="action_table_open_otions">开台选项</string>
+    <string name="cook_method">做法</string>
+    <string name="food_property">详情</string>
+    <string name="more_ingridient">加料</string>
+    <string name="remind_order">催菜</string>
+    <string name="return_dish_count">退菜数量</string>
+    <string name="return_dish_reason">退菜原因</string>
+    <string name="count">数量</string>
+    <string name="write_return_dish_reason">在此输入退菜原因</string>
+    <string name="return_all_dish">整桌退菜</string>
+    <string name="delete_dish">删菜</string>
+    <string name="voucher">优惠劵</string>
+    <string name="pre_order">预订单</string>
+    <string name="cancel_preprint_state">取消预打印</string>
+    <string name="edit_food_remark">备注</string>
+    <string name="detail_op">订单详情</string>
+    <string name="weight">称重确认</string>
+    <string name="change_people">修改人数</string>
+    <string name="process_dish">叫起</string>
+    <string name="discount">改价</string>
+    <string name="cancel">&#160;&#160;取消&#160;&#160;</string>
+    <string name="shutup">&#160;&#160;不再提醒&#160;&#160;</string>
+    <string name="ok">确定</string>
+    <string name="back">返回</string>
+    <string name="sold_out">沽清</string>
+    <string name="un_sold_out">反沽清</string>
+    <string name="order_fragment_suspend">挂起</string>
+    <string name="order_fragment_give">赠送</string>
+    <string name="order_fragment_change">改价</string>
+    <string name="order_fragment_count">数量 *</string>
+    <string name="order_fragment_reduce">-</string>
+    <string name="order_fragment_add">+</string>
+    <string name="order_fragment_delete">删除</string>
+    <string name="order_fragment_other">更多</string>
+    <string name="order_fragment_order_place_not_print">落单不打</string>
+    <string name="order_fragment_cancel_free">取消赠送</string>
+    <string name="check_out">结账</string>
+    <string name="send_account">先送</string>
+    <string name="orderfragment_voiddish_num">输入退菜数量</string>
+    <string name="orderfragment_dishset">套餐</string>
+    <string name="orderfragment_verify_vip">请先验证会员</string>
+    <string name="orderfragment_verify_payment_value">非现金收银方式不允许出现负数</string>
+    <string name="orderfragment_dishplaced_not_switch">菜品已落单，不能切换</string>
+    <string name="orderfragment_dishnotplaced_not_switch">有未落单菜品，不能切换餐桌</string>
+    <string name="orderfragment_opentable_success">开台成功</string>
+    <string name="orderfragment_getbill_failed">获取订单记录失败，请重试</string>
+    <string name="orderfragment_dish_void">菜品已经停售</string>
+    <string name="orderfragment_dish_sold">菜品已经沽清</string>
+
+    <string-array name="payment_tab_menu">
+        <item>选台</item>
+        <item>付款</item>
+    </string-array>
+
+    <string name="F1">F1</string>
+    <string name="F2">F2</string>
+    <string name="F3">F3</string>
+    <string name="F4">F4</string>
+    <string name="F5">F5</string>
+    <string name="F6">F6</string>
+    <string name="F7">F7</string>
+    <string name="F8">F8</string>
+    <string name="F9">F9</string>
+    <string name="F10">F10</string>
+    <string name="F11">F11</string>
+    <string name="DEL">DEL</string>
+    <string name="ADD">+</string>
+    <string name="REDUCE">-</string>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="@string/order_fragment_other"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/fragment_order_item_option_title" />
+
+    <TableRow
+        android:id="@+id/tableRow106"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/DarkGray"></TableRow>
+
+    <GridView
+        android:id="@+id/gridView_order_dish_other"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:columnWidth="@dimen/table_status_fragment_item_columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:verticalSpacing="8dp"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonContinueOrder"
+            style="@style/order_fragment_button"
+            android:background="@drawable/button_bg_no_stroke"
+            android:textColor="@color/Black"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutTableStatus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LayoutTableStatus1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical"
+        tools:context="com.rainbow.smartpos.MainScreenActivity">
+
+        <!--  <LinearLayout
+             android:id="@+id/table_status_top"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.13" >
+
+             <LinearLayout
+                 android:id="@+id/button_table_stauts_sets_conditions"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_select"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_gravity="center"
+                     android:layout_weight="5"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/sets_conditions_select" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="5"
+                     android:gravity="center"
+                     android:text="台况"
+                     android:textColor="@color/White"
+                     android:textSize="@dimen/table_status_bottom" />
+             </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/button_table_stauts_table_management"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_gravity="center"
+                     android:layout_weight="5"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/dining_table_processing_normal" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="5"
+                     android:gravity="center"
+                     android:text="@string/table_manager"
+                     android:textSize="@dimen/table_status_bottom" />
+             </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/button_table_stauts_member_management"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_gravity="center"
+                     android:layout_weight="5"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/member_management_normal" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="5"
+                     android:gravity="center"
+                     android:text="@string/member_management"
+                     android:textSize="@dimen/table_status_bottom" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/button_table_stauts_operate"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_gravity="center"
+                     android:layout_weight="5"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/operate_normal" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="5"
+                     android:gravity="center"
+                     android:text="@string/operate"
+                     android:textSize="@dimen/table_status_bottom" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_status_top_background_normal"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:paddingTop="@dimen/table_status_paddingtop" >
+             </LinearLayout>
+         </LinearLayout> -->
+
+        <FrameLayout
+            android:id="@+id/table_status_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/editTextCheck"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/White"
+                android:ems="10"
+                android:inputType="numberPassword" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

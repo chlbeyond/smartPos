@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rainbow.smartpos.order.OrderDishDetailLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="@dimen/order_fragment_goods_item_columnWidth"
+    android:layout_height="@dimen/order_fragment_goods_item_height"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:id="@+id/OrderDishDetailInnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/textViewDishDetailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:lines="2"
+            android:singleLine="false"
+            android:text=""
+            android:textSize="@dimen/main_menu_text_size"
+            android:textColor="@color/Black" />
+
+        <!-- <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" /> -->
+
+        <TextView
+            android:id="@+id/textViewDishPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:text="¥22.00"
+            android:textColor="@color/Red"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/app_info_text_size" />
+    </FrameLayout>
+
+    <!-- <TextView
+        android:id="@+id/textViewDishSelect"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|right"
+        android:background="@color/Red"
+        android:gravity="center"
+        android:text="√"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" /> -->
+
+    <TextView
+        android:id="@+id/textViewDishSliodOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/app_info_text_size"
+        android:text="" />
+
+</com.rainbow.smartpos.order.OrderDishDetailLayout>

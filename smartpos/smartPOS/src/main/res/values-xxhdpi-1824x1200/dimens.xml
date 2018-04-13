@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="confirm_button_text">30.0sp</dimen>
+    <dimen name="login_button_text">30.0sp</dimen>
+    <dimen name="title_text1">10.0sp</dimen>
+    <dimen name="title_text2">15sp</dimen>
+
+    <dimen name="title_text3">7.0sp</dimen>
+    <dimen name="num_dialog_width">50.0dip</dimen>
+    <dimen name="num_dialog_height">40.0dip</dimen>
+    <dimen name="coupon_service_num_dialog_width">40.0dip</dimen>
+    <dimen name="coupon_service_num_dialog_height">30.0dip</dimen>
+
+    <dimen name="table_status_fragment_text">12.0sp</dimen>
+    <dimen name="table_status_bottom">12.0sp</dimen>
+    <dimen name="table_status_paddingtop">5.0dip</dimen>
+    <dimen name="tab_view_text_size_sp">30.0sp</dimen>
+    <dimen name="order_tab_view_text_size_sp">7sp</dimen>
+
+    <dimen name="table_status_fragment_item_spent_size">10.0sp</dimen>
+    <dimen name="table_status_fragment_item_num_size">12.0sp</dimen>
+    <dimen name="order_fragment_order_dish_price">10sp</dimen>
+    <dimen name="table_status_fragment_item_columnWidth">90dip</dimen>
+    <dimen name="order_fragment_goods_item_columnWidth">80dp</dimen>
+    <dimen name="table_status_fragment_item_margintop">50.0dip</dimen>
+    <dimen name="handover_preview">15sp</dimen>
+    <dimen name="handover_preview_list_text_size">12.0sp</dimen>
+    <dimen name="handover_preview_list_vouvher_text_size">20sp</dimen>
+    <dimen name="order_fragment_detail_text">30.0sp</dimen>
+    <dimen name="order_fragment_gridview_horizontalSpacing">5dip</dimen>
+    <dimen name="order_fragment_gridview_verticalSpacing">5dip</dimen>
+    <dimen name="order_fragment_tab_size">7sp</dimen>
+    <dimen name="check_fragment_detail_text">11.0sp</dimen>
+    <dimen name="fragment_check_money">15.0sp</dimen>
+    <dimen name="fragment_order_item_option_title">15.0sp</dimen>
+    <dimen name="fragment_order_item_option_text">8.0sp</dimen>
+    <dimen name="voucher_service">8.0sp</dimen>
+    <dimen name="voucher_service_title">13.0sp</dimen>
+    <dimen name="voucher_service_button_size">13.0sp</dimen>
+    <dimen name="voucher_service_edittext">13.0sp</dimen>
+    <dimen name="bill_fragment_text">12.0sp</dimen>
+    <dimen name="bill_fragment_table_status_text">15.0sp</dimen>
+    <dimen name="bill_fragment_title_text">12.0sp</dimen>
+    <dimen name="Bill_fragment_Button">12sp</dimen>
+    <dimen name="MenuTextStyletextsize">25sp</dimen>
+    <!-- login -->
+    <dimen name="login_activity_reminder">35sp</dimen>
+
+    <dimen name="manager_margin_lengthways">75dip</dimen>
+    <dimen name="manager_margin_transverse">100dip</dimen>
+    <dimen name="dialog_shop_close_textsize_textview">13sp</dimen>
+    <dimen name="dialog_shop_close_textsize_edittext">15sp</dimen>
+    <dimen name="order_operation_option_personcount">18sp</dimen>
+    <dimen name="order_operation_option_minus">20sp</dimen>
+    <dimen name="main_app_name_text">13sp</dimen>
+    <dimen name="table_status_bottom_text">11.0sp</dimen>
+    <dimen name="table_indicator_count_padding">5dp</dimen>
+    <dimen name="table_status_fragment_item_height">70dip</dimen>
+    <dimen name="order_fragment_goods_item_height">60dp</dimen>
+    <dimen name="table_status_fragment_item_width">100dip</dimen>
+    <dimen name="dish_sliod_out_mark_width">30dip</dimen>
+    <dimen name="dish_sliod_out_mark_textsize">12sp</dimen>
+    <dimen name="dish_sliod_out_mark_height">15dip</dimen>
+    <dimen name="order_table_detail_padding">5dip</dimen>
+    <dimen name="button_order_fragment_addquantity_paddingtop">10dip</dimen>
+    <dimen name="check_fragment_promotion_text_size">12.0sp</dimen>
+    <dimen name="check_fragment_pay_radiu">3dp</dimen>
+    <dimen name="voucher_service_btn_padding">5dp</dimen>
+    <dimen name="select_promotion_item_padding">2dp</dimen>
+    <dimen name="num_dialog_magin">2dp</dimen>
+
+    <!-- member -->
+    <dimen name="query_recharge_member_margin">150.0dip</dimen>
+    <dimen name="recharge_op_space">10dip</dimen>
+
+    <!-- table_manage -->
+    <dimen name="table_manage_button_horizontal_margin">150dip</dimen>
+    <dimen name="table_manage_button_vertical_margin">80dip</dimen>
+
+    <!-- place_fragment -->
+    <dimen name="place_fragment_gridview_hSpacing">5dp</dimen>
+    <dimen name="place_fragment_gridview_vSpacing">10dp</dimen>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/White"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/slodout_soon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_bg_with_coner"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/slodout_soon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slodout_soon" />
+
+        <TextView
+            android:id="@+id/slodout_soon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/table_status_fragment_text"
+            android:text="@string/slodout_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/auto_slodout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_bg_with_coner"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/auto_slodout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/auto_slodout" />
+
+        <TextView
+            android:id="@+id/auto_slodout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/table_status_fragment_text"
+            android:text="@string/auto_slodout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slodout_longtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_bg_with_coner"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/slodout_longtime_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slodout_longtime" />
+
+        <TextView
+            android:id="@+id/slodout_longtime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/table_status_fragment_text"
+            android:text="@string/slodout_longtime" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+
+            <!-- 边框颜色值 -->
+            <solid android:color="@color/title_login_background" />
+            <!-- 左边圆角值 -->
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:topLeftRadius="5dp" />
+        </shape>
+    </item>
+
+    <!-- 边框size -->
+    <item
+        android:bottom="1.5dp"
+        android:left="1.5dp"
+        android:top="1.5dp">
+        <shape>
+
+            <!-- 主体颜色值 -->
+            <solid android:color="@color/title_login_background" />
+            <!-- 左边圆角值 -->
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:topLeftRadius="5dp" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/op_dialog_button_layout_bg">
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawerlayout_slod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slod_out"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+                <Button
+                    android:id="@+id/button_print_sold_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/print_slodout_list"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+            <GridView
+                android:id="@+id/recyclerView_slod_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:columnWidth="190px"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="@string/sale_stop"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <GridView
+                android:id="@+id/recyclerView_sale_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:columnWidth="190px"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="22px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_sold_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="horizontal"></LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

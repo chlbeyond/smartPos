@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_detail_dailog_back"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CDCDCD" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_return"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/return_dish"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_dialog_free"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/free_dish"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_dialog_changeprice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/change_price"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+</LinearLayout>

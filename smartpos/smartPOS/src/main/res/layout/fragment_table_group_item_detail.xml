@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rainbow.smartpos.tablestatus.TableTagView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_status_fragment_item_height">
+
+
+    <com.rainbow.smartpos.util.AutoFitText
+        android:id="@+id/textViewTableDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10px"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="A0001 （并）"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewTablePersonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="5px"
+        android:layout_marginLeft="10px"
+        android:text="12人"
+        android:textSize="@dimen/table_status_fragment_item_spent_size" />
+
+
+    <TextView
+        android:id="@+id/textViewTableSpending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="15px"
+        android:text="21:03"
+        android:textColor="#C27054"
+        android:textSize="@dimen/table_status_fragment_item_spent_size" />
+
+
+    <ImageView
+        android:id="@+id/imageViewLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/table_status_item_detail"
+        android:layout_marginTop="@dimen/table_status_item_detail"
+        android:src="@drawable/new_locked" />
+
+    <TextView
+        android:id="@+id/imageViewReserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="5px"
+        android:text="逆"
+        android:textColor="#FFF"
+        android:textSize="@dimen/table_status_fragment_item_spent_size" />
+
+    <TextView
+        android:id="@+id/textViewTableOpenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="5px"
+        android:layout_marginRight="5px"
+        android:alpha="138"
+        android:textColor="#C27054" />
+</com.rainbow.smartpos.tablestatus.TableTagView>

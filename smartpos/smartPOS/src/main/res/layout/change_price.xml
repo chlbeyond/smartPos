@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/promptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dishs"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/original_price" />
+
+            <TextView
+                android:id="@+id/textViewOrderOriginPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="0.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/new_price" />
+
+            <EditText
+                android:id="@+id/editTextOrderNewPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/please_input"
+                android:inputType="none" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/num_pad_bg"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/buttonNumPad1"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_1" />
+
+                <Button
+                    android:id="@+id/buttonNumPad2"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_2" />
+
+                <Button
+                    android:id="@+id/buttonNumPad3"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonNumPad4"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_4" />
+
+                <Button
+                    android:id="@+id/buttonNumPad5"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_5" />
+
+                <Button
+                    android:id="@+id/buttonNumPad6"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonNumPad7"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_7" />
+
+                <Button
+                    android:id="@+id/buttonNumPad8"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_8" />
+
+                <Button
+                    android:id="@+id/buttonNumPad9"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/buttonNumPadC"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/letterKey_c" />
+
+                <Button
+                    android:id="@+id/buttonNumPad0"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="@string/numpad_0" />
+
+                <Button
+                    android:id="@+id/buttonNumPadOk"
+                    style="@style/CheckCaculatorButton"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:text="." />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

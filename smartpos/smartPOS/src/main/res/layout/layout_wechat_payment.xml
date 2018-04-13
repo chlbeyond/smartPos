@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_wechat_payment_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="扫码支付"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_bottom_text" />
+
+    <TextView
+        android:id="@+id/textView_wechat_payment_slot_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="刷卡支付"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_bottom_text" />
+
+    <TextView
+        android:id="@+id/textView_wechat_payment_verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="支付验证"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_bottom_text" />
+</LinearLayout>

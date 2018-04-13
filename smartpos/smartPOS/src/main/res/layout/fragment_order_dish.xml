@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/linearLayout_order_dish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"></FrameLayout>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/checkBox_encode_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="拼音/编码点菜"
+            android:textSize="@dimen/main_menu_text_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/hold_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/hold_dish"
+                android:textSize="@dimen/main_menu_text_size" />
+
+            <CheckBox
+                android:id="@+id/place_no_print"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/place_no_print"
+                android:textSize="@dimen/main_menu_text_size" />
+
+            <Button
+                android:id="@+id/buttonOrderFetchOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/place_detail_first_button_selector"
+                android:text="@string/fetch_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text"
+                android:visibility="gone"></Button>
+
+            <Button
+                android:id="@+id/buttonOrderSaveOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginRight="15dp"
+                android:background="@drawable/place_detail_first_button_selector"
+                android:text="@string/save_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text"
+                android:visibility="gone"></Button>
+
+            <Button
+                android:id="@+id/buttonOrderCancelOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/place_detail_first_button_selector"
+                android:text="@string/clear_empty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text"
+                android:visibility="gone"></Button>
+
+            <Button
+                android:id="@+id/buttonOrderFirstPlaceOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/place_detail_first_button_selector"
+                android:text="@string/first_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text"></Button>
+
+            <Button
+                android:id="@+id/buttonOrderPlaceOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/place_detail_button_selector"
+                android:text="@string/order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text"></Button>
+        </LinearLayout>
+
+    </TableRow>
+
+</LinearLayout>

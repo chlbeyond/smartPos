@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_query_member"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/member_query_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/member_query_hint"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_fragment_text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/member_query_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/member_edit_stroke"
+            android:enabled="true"
+            android:focusable="false"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_fragment_text" />
+
+        <TextView
+            android:id="@+id/query_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未查询到会员"
+            android:textColor="@color/Red"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/query"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_fragment_text" />
+    </LinearLayout>
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_query_member"
+        android:layout_margin="10dp"
+        android:layout_marginTop="100px"
+        android:background="@color/keyboard_background"
+        android:keyBackground="@drawable/keyboard_key_background"
+        android:keyTextColor="@color/keyboard_text_color"
+        android:shadowColor="@color/keyboard_key_background"
+        android:shadowRadius="0" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * This file is part of DroidPHP
+  ~  *
+  ~  * (c) 2014 Shushant Kumar
+  ~  *
+  ~  * For the full copyright and license information, please view the LICENSE
+  ~  * file that was distributed with this source code.
+  ~  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- not yet implemented -->
+    <!--
+    <PreferenceCategory android:title="CONFIGURATIONS">
+        <CheckBoxPreference
+                android:title="Lock Wifi"
+                android:key="enable_lock_wifi"
+                android:summary="Keep wifi active when the server is running"
+                android:defaultValue="false"/>
+        <CheckBoxPreference
+                android:title="Screen Always On"
+                android:key="enable_screen_on"
+                android:summary="The screen never enter sleep mode when the server is running"
+                android:defaultValue="true"/>
+    </PreferenceCategory>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <PreferenceCategory android:title="打印机">
+        <ListPreference
+            android:key="local_usb_printer_config"
+            android:summary="将本地连接的USB打印机共享成网络打印机"
+            android:title="设置本地USB打印机" />
+        <ListPreference
+            android:key="local_com_printer_config"
+            android:summary="将本地连接的串口打印机共享成网络打印机"
+            android:title="设置本地串口打印机" />
+        <ListPreference
+            android:defaultValue="115200"
+            android:entries="@array/baudrates_name"
+            android:entryValues="@array/baudrates_value"
+            android:key="local_baudrate_printer_config"
+            android:summary="设置本地串口波特率"
+            android:title="设置本地串口波特率" />
+        <ListPreference
+            android:key="remote_printer_config"
+            android:summary="选择本机使用的网络打印机"
+            android:title="选择网络打印机" />
+    </PreferenceCategory>
+    <!--
+    PreferenceCategory android:title="钱箱相关" >
+        <Preference
+            android:key="open_cashbox"
+            android:title="打开钱箱" />
+            
+    </PreferenceCategory>
+
+    -->
+
+</PreferenceScreen>

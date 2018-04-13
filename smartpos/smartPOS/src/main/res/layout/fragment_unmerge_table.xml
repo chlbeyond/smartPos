@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A3F6A"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/table_manage_title_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/OrderTopLeftFontField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/order_fragment_table_name_hint"
+                android:textColor="@color/White"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/textViewTableName"
+                style="@style/OrderTopLeftFontField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0001桌"
+                android:textColor="@color/White"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:padding="@dimen/cancel_dialog_btn_padding"
+            android:src="@drawable/new_cancel"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/unmerge_table"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_bottom_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/un_merge_backgroud"
+        android:layout_weight="2.25">
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/table_status_bottom_text"
+            android:background="@drawable/top_coners_bg"
+            android:text="请选择餐台" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_coners_bg"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/White"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="@dimen/main_menu_text_size"
+                android:paddingBottom="@dimen/check_fragment_print_paddingTop"
+                android:paddingTop="@dimen/check_fragment_print_paddingTop"
+                android:background="@drawable/button_selector"
+                android:text="@string/sure" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/hint"
+            android:layout_above="@id/buttonLayout"
+            android:gravity="left|top"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:text="暂无可以取消并台的餐桌" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/hint"
+            android:layout_above="@id/buttonLayout"
+            android:orientation="horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerTables"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"></android.support.v4.view.ViewPager>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/Gray" />
+
+            <ListView
+                android:id="@+id/listViewGroup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="@dimen/order_fragment_goods_item_columnWidth"
+    android:layout_height="@dimen/order_fragment_goods_item_height"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/dish_detail_bg_selector"
+    android:padding="5dp">
+
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/textViewDishDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:lines="2"
+        android:singleLine="false"
+        android:text="水果沙拉"
+        android:textColor="#273655"
+        android:textSize="@dimen/main_menu_text_size" />
+
+    <TextView
+        android:id="@+id/textViewDishSliodOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="@string/slod_out"
+        android:textColor="#273655"
+        android:textSize="@dimen/dish_sliod_out_mark_textsize"
+        android:visibility="gone" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/textViewDishPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:maxLines="2"
+        android:text="¥22.00"
+        android:textColor="#666666"
+        android:textSize="@dimen/main_menu_text_size" />
+
+</FrameLayout>

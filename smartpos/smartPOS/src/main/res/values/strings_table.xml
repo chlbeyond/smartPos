@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="service_type">市别:</string>
+    <string name="num_of_people_serving">人数:</string>
+    <string name="order_total">营业额:</string>
+    <string name="order_paid">已结:</string>
+    <string name="order_unpaid">未结:</string>
+    <string name="waiter">操作员:</string>
+    <string name="all_table">全部</string>
+
+    <!-- top bar actions -->
+    <string name="table_open">开台</string>
+    <string name="table_merge">并台</string>
+    <string name="table_switch">转台</string>
+    <string name="table_preprint">预打单</string>
+    <string name="table_reserved">预定</string>
+    <string name="table_emptied">空台</string>
+    <string name="table_temp_paid">暂结</string>
+    <string name="table_overtimed">超时</string>
+
+    <!-- bottom right bar actions -->
+    <string name="logout">注销</string>
+    <string name="handeover">交接</string>
+    <string name="daily_stat">日结</string>
+    <string name="bill_query">账单</string>
+    <string name="print_slodout_list">打印小票</string>
+
+    <!-- table option for long press -->
+    <string name="merge_table">并台</string>
+    <string name="merge_table_order">并台点菜</string>
+    <string name="merge_table_check">并台埋单</string>
+    <string name="split_table">搭台</string>
+    <string name="change_table">转台</string>
+    <string name="return_table">消台</string>
+    <string name="unmerge_table">取消并台</string>
+    <string name="unsplit_table">取消搭台</string>
+    <string name="open_and_merge">并台开台</string>
+
+    <string name="can_merge_table">备选餐桌</string>
+    <string name="has_choose_table">已选</string>
+    <string name="unselect_all">清空</string>
+
+</resources>

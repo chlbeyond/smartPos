@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = false
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.4'
+//    compile files('libs/json.jar')
+//    compile 'org.json:json:20160212'
+//    compile files('libs/sugar-1.2.jar')
+    compile 'com.github.satyan:sugar:1.5'
+    compile('com.github.zhaokaiqiang.klog:library:1.3.0')
+//    compile 'com.jakewharton:butterknife:7.0.1'
+//    compile files('libs/autobahn.jar')
+//    compile files('libs/commons-codec-1.10.jar')
+//    compile 'org.apache.httpcomponents:httpclient:4.5.2'
+//    compile files('libs/jackson-core-asl-1.9.7.jar')
+    compile 'com.fasterxml.jackson.core:jackson-core:2.8.5'
+//    compile files('libs/jackson-mapper-asl-1.9.7.jar')
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+
+//    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile('me.zhanghai.android.materialprogressbar:library:1.1.6')
+
+//    compile files('libs/httpcore-4.1.4.jar')
+//    compile 'org.apache.httpcomponents:httpcore:4.1.4'
+//    compile files('libs/httpclient-4.1.3.jar')
+//    compile 'org.apache.httpcomponents:httpclient:4.1.3'
+    compile('org.apache.httpcomponents:httpclient-android:4.3.5.1')
+
+    //依赖静态jar包
+    compile files('libs/SanyiPosSDK-3.7.38.jar')
+    compile ('org.java-websocket:Java-WebSocket:1.3.0')
+    compile ('commons-codec:commons-codec:1.10')
+
+//    compile('com.qianhub.sdk:SanyiPosSDK:3.7.7') {
+//        exclude group: 'com.google.code.gson', module: 'gson'
+//        exclude group: 'org.json', module: 'json'
+//        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+//        exclude group: 'org.apache.httpcomponents', module: 'httpcore'
+//    }
+}
+

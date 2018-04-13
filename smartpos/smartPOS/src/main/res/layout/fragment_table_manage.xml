@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202D59">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_open_and_merge"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#07a47d"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/open_and_merge" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/open_and_merge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_merge_table"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#07a47d"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_merge_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/merge_table" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_unmerge_table"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#07a47d"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_unmerge_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/unmerge_table" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_split_table"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#315BEB"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_split_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/split_table" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_unsplit_table"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#315BEB"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_unsplit_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/unsplit_table" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_change_table"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#D45729"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_change_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/change_table" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/button_fragment_table_manage_cancel_table"
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#CB2A49"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_cancel_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/return_table" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#51b8f2"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_cancel_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/return_table" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/table_manage_btn_linearlayout_style"
+                android:background="#ff6565"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    style="@style/table_manage_btn_image_style"
+                    android:src="@drawable/table_manage_unmerge_table" />
+
+                <TextView
+                    style="@style/manage_btn_text_style"
+                    android:text="@string/unmerge_table" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

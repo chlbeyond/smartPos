@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/member_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/check_member_info_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_member_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="啦啦啦"
+                android:textColor="@color/common_signin_btn_light_text_default"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/textView_member_phone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="3677"
+                android:textColor="@color/common_signin_btn_light_text_default"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView_member_balance"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="3677"-->
+                <!--android:textColor="@color/Black"-->
+                <!--android:textSize="@dimen/table_status_bottom_text" />-->
+
+
+                <Button
+                    android:id="@+id/button_member_pay_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/pay_by_member"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"></View>
+
+                <Button
+                    android:id="@+id/button_member_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/immediately_recharge"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_member_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_member_num"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/common_signin_btn_light_text_default"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+                <!--<Button-->
+                <!--android:id="@+id/button_member_pay_total"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/button_selector"-->
+                <!--android:visibility="gone" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="#b6b6b6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_member_balance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="3677"
+                android:textColor="@color/common_signin_btn_light_text_default"
+                android:textSize="@dimen/table_status_bottom_text" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_member_total"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="积分:1582.00"
+                android:textColor="@color/common_signin_btn_light_text_default"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_member_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_member_score_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:text="使用积分抵现"
+                    android:textColor="@color/common_signin_btn_light_text_default"
+                    android:textSize="@dimen/table_status_bottom_text" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_member_score"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/score_switch"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/textView_member_notice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="本次最多可用20积分,抵扣¥2.0元"
+                    android:textColor="@color/common_signin_btn_light_text_default"
+                    android:textSize="@dimen/table_status_bottom_text" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_cancel_member"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:src="@drawable/number_delete" />
+    <Button
+        android:id="@+id/button_member_logout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/place_detail_logout_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/place_dish_btn_padding"
+        android:paddingTop="@dimen/place_dish_btn_padding"
+        android:text="撤销"
+        android:textColor="@color/White"
+        android:textSize="@dimen/table_status_bottom_text" />
+
+</LinearLayout>

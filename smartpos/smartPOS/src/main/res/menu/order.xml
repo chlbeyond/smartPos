@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.go2smartphone.smartpos.OrderActivity">
+
+    <item
+        android:id="@+id/action_coupon"
+        android:icon="@drawable/coupon"
+        android:title="优惠劵"
+        android:orderInCategory="9"
+        android:showAsAction="ifRoom|withText" />
+
+</menu>

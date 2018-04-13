@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/chooseAllBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="8dp"
+            android:textColor="@color/title_table_background"
+            android:textSize="@dimen/app_info_text_size"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:layout_alignParentRight="true"
+            android:text="@string/choose_all" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridViewTables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="@dimen/merge_open_table_item_width"
+        android:gravity="center"
+        android:layout_below="@id/title"
+        android:background="@color/White"
+        android:horizontalSpacing="8dp"
+        android:numColumns="auto_fit"
+        android:fadeScrollbars="true"
+        android:padding="10dp"
+        android:verticalSpacing="8dp" />
+
+</RelativeLayout>

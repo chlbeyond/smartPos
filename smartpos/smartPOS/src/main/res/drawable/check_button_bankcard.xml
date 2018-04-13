@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/paymentbankcard_none" android:state_selected="true">
+        <shape></shape>
+    </item>
+    <item android:drawable="@drawable/paymentbankcard">
+        <shape></shape>
+    </item>
+
+</selector>

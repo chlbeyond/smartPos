@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/place_setdish_top_coners_bg"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/set_choose_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/is_choose_box_normal"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewDishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <LinearLayout
+            android:id="@+id/remarkLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textViewDishPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_info_text_size"
+            android:textColor="@color/order_fragment_price_textcolor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/textViewDishCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_info_text_size"
+            android:textColor="@color/order_fragment_price_textcolor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/textViewDishReturnCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/app_info_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+    </LinearLayout>
+
+    <com.rainbow.common.view.MyGridView
+        android:id="@+id/setItemDishGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/place_setdish_bottom_coners_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:horizontalSpacing="@dimen/place_fragment_gridview_vSpacing"
+        android:numColumns="auto_fit"
+        android:columnWidth="@dimen/place_dish_girdview_columnWidth"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:verticalSpacing="@dimen/place_fragment_gridview_hSpacing"></com.rainbow.common.view.MyGridView>
+
+</LinearLayout>

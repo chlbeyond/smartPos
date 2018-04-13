@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 姝ゅ�间负true pickerview_textsize鎵嶄細鏈夋晥鏋�-->
+    <bool name="pickerview_customTextSize">true</bool>
+</resources>

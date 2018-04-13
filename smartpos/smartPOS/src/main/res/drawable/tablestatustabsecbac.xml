@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#fc5c5c" />
+
+    <corners android:radius="10dp" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="@dimen/table_indicator_count_padding"
+        android:right="@dimen/table_indicator_count_padding"
+        android:top="1dp" />
+
+</shape>

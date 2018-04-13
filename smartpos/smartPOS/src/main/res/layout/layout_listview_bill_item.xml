@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView_bill_invoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/invoice"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/textView_bill_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/odd_number"
+        android:textColor="#333333"
+        android:textSize="21px" />
+
+    <TextView
+        android:id="@+id/textView_table_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:text="@string/desk_number"
+        android:textColor="#333333"
+        android:textSize="21px" />
+
+    <TextView
+        android:id="@+id/textView_people_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/person_count"
+        android:textColor="#333333"
+        android:textSize="21px" />
+
+    <TextView
+        android:id="@+id/textView_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="@string/amount"
+        android:textColor="#333333"
+        android:textSize="21px" />
+
+    <TextView
+        android:id="@+id/textView_salesman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="@string/salesman"
+        android:textColor="#333333"
+        android:textSize="21px" />
+
+    <TextView
+        android:id="@+id/textView_closed_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="@string/closed_time"
+        android:textColor="#333333"
+        android:textSize="21px" />
+</LinearLayout>

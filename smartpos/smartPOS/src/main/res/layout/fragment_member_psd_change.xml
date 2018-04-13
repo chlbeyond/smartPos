@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            style="@style/member_psd_change_style"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/member_psd_change_text_style"
+                    android:text="请输入新密码" />
+
+                <EditText
+                    android:id="@+id/editText_member_psd"
+                    style="@style/member_psd_change_edit_style"
+                    android:hint="小于八位"
+                    android:focusable="true"
+
+                    android:inputType="numberPassword"
+                    android:maxLength="8" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            style="@style/member_psd_change_style"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/member_psd_change_text_style"
+                    android:text="确认密码" />
+
+                <EditText
+                    android:id="@+id/editText_member_confirm_psd"
+                    style="@style/member_psd_change_edit_style"
+                    android:hint="小于八位"
+                    android:inputType="numberPassword"
+                    android:maxLength="8" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_fragment_member_psd_confirm"
+        android:layout_width="match_parent"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:background="@drawable/member_query_button_selector"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+</LinearLayout>

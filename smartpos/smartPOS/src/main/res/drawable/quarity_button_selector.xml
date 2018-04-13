@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/return_dish_text_enabled_false" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/title_login_background" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/title_table_background" />
+        </shape>
+    </item>
+
+
+</selector>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 代金卷dialog的界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/op_dialog_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/op_dialog_button_layout_bg">
+
+        <TextView
+            android:id="@+id/op_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/voucher_info"
+            android:textSize="@dimen/dialog_title_text_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iv_close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:clickable="true"
+            android:padding="@dimen/cancel_dialog_btn_padding"
+            android:src="@drawable/new_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/number_pad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.1"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/voucher_number_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voucher_edittext_layout_shape"
+                android:hint="@string/please_input_voucher_id"
+                android:padding="10dp"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/keybord"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/title_table_background"
+                android:layout_alignTop="@id/voucher_number_edit"
+                android:layout_alignRight="@id/voucher_number_edit"
+                android:layout_alignBottom="@id/voucher_number_edit"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/main_menu_text_size"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:text="@string/richscan" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/voucher_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="@dimen/order_fragment_op_dialog_cook_item_width"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:horizontalSpacing="5px"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5px"></GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/op_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/sure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:textSize="@dimen/main_menu_text_size"
+                android:text="@string/sure"
+                android:textColor="@color/White" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<resources>
+    <dimen name="top_header_height">62dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="confirm_button_text">40sp</dimen>
+    <dimen name="login_button_text">32sp</dimen>
+    <dimen name="title_text1">30sp</dimen>
+    <dimen name="title_text2">20sp</dimen>
+    <dimen name="title_text3">21sp</dimen>
+    <dimen name="fragment_check_text">16sp</dimen>
+    <dimen name="num_dialog_width">100dp</dimen>
+    <dimen name="num_dialog_height">75dp</dimen>
+    <dimen name="num_dialog_magin">20dp</dimen>
+    <dimen name="sliding_textsize">12sp</dimen>
+    <dimen name="sliding_textsize2">18sp</dimen>
+    <dimen name="table_status_fragment_text">22sp</dimen>
+    <dimen name="MenuTextStyletextsize">18sp</dimen>
+    <!-- used in table status bottom -->
+    <dimen name="table_status_bottom">18sp</dimen>
+    <dimen name="main_app_name_text">18sp</dimen>
+    <dimen name="manager_margin_lengthways">150dip</dimen>
+    <dimen name="manager_margin_transverse">200dip</dimen>
+    <!-- Sliding Tablayout size -->
+    <dimen name="tab_view_text_size_sp">18sp</dimen>
+    <dimen name="order_tab_view_text_size_sp">18sp</dimen>
+    <dimen name="tab_view_radius_text_size_sp">10sp</dimen>
+    <!-- table_status_fragment_item -->
+    <dimen name="table_status_fragment_item_height">120dp</dimen>
+    <dimen name="order_fragment_goods_item_height">120dp</dimen>
+    <dimen name="table_status_fragment_item_width">140dip</dimen>
+    <dimen name="dish_sliod_out_mark_width">40dip</dimen>
+    <dimen name="dish_sliod_out_mark_textsize">16sp</dimen>
+    <dimen name="dish_sliod_out_mark_height">20dip</dimen>
+    <dimen name="table_status_fragment_item_spent_size">18sp</dimen>
+    <dimen name="table_status_fragment_item_num_size">25sp</dimen>
+    <dimen name="order_fragment_order_dish_price">12sp</dimen>
+    <dimen name="table_status_fragment_item_columnWidth">180dp</dimen>
+    <dimen name="order_fragment_goods_item_columnWidth">180dp</dimen>
+    <dimen name="table_status_fragment_item_margintop">20dp</dimen>
+    <dimen name="handover_preview">20sp</dimen>
+    <dimen name="handover_preview_list_text_size">15sp</dimen>
+    <dimen name="handover_preview_list_vouvher_text_size">13sp</dimen>
+    <!-- order fragment -->
+    <dimen name="order_fragment_detail_text">16sp</dimen>
+    <dimen name="order_fragment_gridview_horizontalSpacing">10dp</dimen>
+    <dimen name="order_fragment_gridview_verticalSpacing">10dp</dimen>
+    <dimen name="order_fragment_tab_size">32sp</dimen>
+    <dimen name="order_slidlayout_size">12sp</dimen>
+    <!-- check fragment -->
+    <dimen name="check_fragment_detail_text">18sp</dimen>
+    <dimen name="fragment_check_money">30sp</dimen>
+    <dimen name="check_fragment_dialog_sales">25sp</dimen>
+    <!-- fragment order item option -->
+    <dimen name="fragment_order_item_option_title">20sp</dimen>
+    <dimen name="fragment_order_item_option_text">18sp</dimen>
+    <!-- voucher_service -->
+    <dimen name="voucher_service">30sp</dimen>
+    <dimen name="voucher_service_title">25sp</dimen>
+    <dimen name="voucher_service_button_size">25sp</dimen>
+    <dimen name="voucher_service_edittext">20sp</dimen>
+    <!-- bill_fragment -->
+    <dimen name="bill_fragment_text">19sp</dimen>
+    <dimen name="bill_fragment_table_status_text">18sp</dimen>
+    <dimen name="bill_fragment_title_text">22sp</dimen>
+    <dimen name="Bill_fragment_Button">22sp</dimen>
+    <dimen name="table_status_item_detail">2dp</dimen>
+    <!-- dailystat -->
+    <dimen name="dailystat_text">18sp</dimen>
+    <!-- login -->
+    <dimen name="login_activity_reminder">25sp</dimen>
+    <dimen name="table_status_paddingtop">5.0dip</dimen>
+    <dimen name="table_indicator_count_padding">10dp</dimen>
+    <dimen name="order_operation_option_personcount">30sp</dimen>
+    <dimen name="order_operation_option_minus">30sp</dimen>
+    <dimen name="order_table_detail_padding">10.0dip</dimen>
+    <dimen name="table_status_bottom_text">25.0sp</dimen>
+    <dimen name="button_order_fragment_addquantity_paddingtop">20dip</dimen>
+    <dimen name="select_promotion_item_padding">5dp</dimen>
+    <dimen name="dialog_shop_close_textsize_textview">25sp</dimen>
+    <dimen name="dialog_shop_close_textsize_edittext">30sp</dimen>
+    <dimen name="coupon_service_num_dialog_width">100.0dip</dimen>
+    <dimen name="coupon_service_num_dialog_height">75.0dip</dimen>
+
+    <!-- member -->
+    <dimen name="query_recharge_member_margin">300.0dip</dimen>
+    <dimen name="recharge_op_space">20dip</dimen>
+
+    <!-- table_manage -->
+    <dimen name="table_manage_button_horizontal_margin">350dip</dimen>
+    <dimen name="table_manage_button_vertical_margin">168dip</dimen>
+    <!-- place_fragment -->
+    <dimen name="place_fragment_gridview_hSpacing">10dp</dimen>
+    <dimen name="place_fragment_gridview_vSpacing">20dp</dimen>
+
+    <dimen name="slidingmenu_offset">80dp</dimen>
+
+    <dimen name="shadow_width">15dp</dimen>
+    <!-- 连接主机,登录界面软件信息文字大小 -->
+    <dimen name="app_info_text_size">18sp</dimen>
+
+    <!-- 主界面菜单文字大小 -->
+    <dimen name="main_menu_text_size">24sp</dimen>
+
+    <!-- 取消弹出框按钮padding -->
+    <dimen name="cancel_dialog_btn_padding">30dp</dimen>
+
+    <!-- 台况桌子区域margin -->
+    <dimen name="table_status_indicator_margin">10dp</dimen>
+
+    <!-- 下单界面菜品列表宽度 -->
+    <dimen name="place_dish_girdview_columnWidth">300dp</dimen>
+
+    <!-- 下单界面菜品操作dialog取消按钮paddingleft -->
+    <dimen name="place_dish_dish_op_cancel_btn_paddingleft">40dp</dimen>
+
+    <!-- 下单界面菜品操作dialog取消按钮paddingright -->
+    <dimen name="place_dish_dish_op_cancel_btn_paddingright">20dp</dimen>
+
+    <!-- 下单界面buttonpadding -->
+    <dimen name="place_dish_btn_padding">10dp</dimen>
+
+    <!-- dialog_title_text_size -->
+    <dimen name="dialog_title_text_size">25sp</dimen>
+
+    <!-- 下单界面菜单占比 -->
+    <dimen name="place_fragment_menu_width">500px</dimen>
+
+    <!-- 点菜界面下单按钮 -->
+    <dimen name="order_dish_place_btn_padding_left">50dp</dimen>
+
+    <!-- 点菜界面下单按钮 -->
+    <dimen name="order_dish_place_btn_padding_top">20dp</dimen>
+
+    <!-- 点菜界面查询按钮margin -->
+    <dimen name="order_dish_edit_margin">15dp</dimen>
+
+    <!-- 点菜操作界面dialog做法item高 -->
+    <dimen name="order_fragment_op_dialog_cook_item_height">90dp</dimen>
+
+    <!-- 点菜操作界面dialog做法item宽 -->
+    <dimen name="order_fragment_op_dialog_cook_item_width">140dp</dimen>
+
+    <!-- 点菜操作界面dialog做法提示大小 -->
+    <dimen name="order_fragment_op_dialog_cook_hint_text_size">14sp</dimen>
+
+    <!-- 点菜操作界面dialog输入框padding-->
+    <dimen name="order_fragment_op_dialog_edit_padding">11dp</dimen>
+
+    <!-- 结账界面收银方式item的高度-->
+    <dimen name="check_fragment_payment_mode_item_height">60dp</dimen>
+
+    <!-- 结账界面促销活动item的高度-->
+    <dimen name="check_fragment_promotion_item_height">80dp</dimen>
+
+    <!-- 结账界面代金劵输入sn键盘padding-->
+    <dimen name="check_fragment_voucher_sn_pad_padding">0px</dimen>
+
+    <!-- 结账界面代金劵输入数量键盘padding-->
+    <dimen name="check_fragment_voucher_count_pad_padding">13px</dimen>
+
+    <!-- 结账界面代金劵数量dialog宽-->
+    <dimen name="check_fragment_voucher_count_width">350px</dimen>
+
+    <!-- 结账界面代金劵数量dialog高-->
+    <dimen name="check_fragment_voucher_count_height">210px</dimen>
+
+    <!-- 结账界面代金劵编号dialog宽-->
+    <dimen name="check_fragment_voucher_sn_width">490px</dimen>
+
+    <!-- 结账界面代金劵编号dialog高-->
+    <dimen name="check_fragment_voucher_sn_height">588px</dimen>
+
+    <!-- 结账界面微信支付dialog宽-->
+    <dimen name="check_fragment_ten_pay_width">532px</dimen>
+
+    <!-- 结账界面微信支付dialog高-->
+    <dimen name="check_fragment_ten_pay_height">630px</dimen>
+
+    <!-- 结账界面现金支付dialog宽-->
+    <dimen name="check_fragment_cash_pay_width">490px</dimen>
+
+    <!-- 结账界面现金支付dialog高-->
+    <dimen name="check_fragment_cash_pay_height">590px</dimen>
+
+    <!-- 结账界面结账按钮paddingLeft-->
+    <dimen name="check_fragment_print_paddingLeft">45dp</dimen>
+
+    <!-- 结账界面结账按钮paddingTop-->
+    <dimen name="check_fragment_print_paddingTop">15dp</dimen>
+
+    <!-- 会员充值界面输入金额键盘的宽-->
+    <dimen name="recharge_num_pad_width">420px</dimen>
+
+    <!-- 会员充值界面输入金额键盘的高-->
+    <dimen name="recharge_num_pad_height">490px</dimen>
+
+    <!-- 会员充值界面输入框长度-->
+    <dimen name="recharge_edit_width">210dp</dimen>
+
+    <!-- 会员充值界面读取会员dialog高度-->
+    <dimen name="read_member_dialog_height">300px</dimen>
+
+    <!-- 会员充值界面输入框padding-->
+    <dimen name="recharge_edit_padding">10dp</dimen>
+
+    <!-- 会员创建界面数字键盘的宽-->
+    <dimen name="member_create_number_pad_width">420px</dimen>
+
+    <!-- 会员创建界面数字键盘的高-->
+    <dimen name="member_create_number_pad_height">490px</dimen>
+
+    <!-- 会员创建界面每行的间隔-->
+    <dimen name="member_create_line_margin">20dp</dimen>
+
+    <!-- 并台开台item宽-->
+    <dimen name="merge_open_table_item_width">154dp</dimen>
+
+    <!-- 并台开台item高-->
+    <dimen name="merge_open_table_item_height">98dp</dimen>
+
+    <!-- 选择套餐单排高度-->
+    <dimen name="set_dish_item_height">110dp</dimen>
+
+    <!-- 结账界面输入会员支付密码的宽-->
+    <dimen name="check_member_pwd_width">350px</dimen>
+
+    <!-- 结账界面输入会员支付密码的高-->
+    <dimen name="check_member_pwd_height">168px</dimen>
+
+    <!-- 下单界面recycleview的item间隔-->
+    <dimen name="recycle_view_space">15dp</dimen>
+
+    <!--选择点菜模式按钮paddingTop-->
+    <dimen name="combine_table_open_btn_paddingtop">28dp</dimen>
+
+    <!--选择点菜模式按钮paddingLeft-->
+    <dimen name="combine_table_open_btn_paddingLeft">84dp</dimen>
+
+    <dimen name="slod_out_recyclerview_item_space">20px</dimen>
+</resources>

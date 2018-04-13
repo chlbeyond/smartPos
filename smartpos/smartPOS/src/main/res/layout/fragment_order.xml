@@ -1,0 +1,409 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutOrder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="#fff"
+            android:padding="@dimen/order_table_detail_padding">
+
+            <TableRow
+                android:id="@+id/TableRow02"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/TextView20"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="餐桌:" />
+
+                <TextView
+                    android:id="@+id/textViewTableName"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <LinearLayout
+                    android:id="@+id/currentTableLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5">
+
+                    <TextView
+                        style="@style/OrderTopLeftFontLabel"
+                        android:layout_width="0dp"
+                        android:text="相关餐桌:"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        android:id="@+id/currentTableName"
+                        style="@style/OrderTopLeftFontField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="left" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/TextView14"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="人数:" />
+
+                <TextView
+                    android:id="@+id/textViewOrderNumOfPeopleServed"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="4" />
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="服务员:" />
+
+                <TextView
+                    android:id="@+id/textViewTableWaiter"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="王小儿" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textViewOrderDetailRowNo"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="落单:" />
+
+                <TextView
+                    android:id="@+id/textViewOrderPlace"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:textColor="#249351" />
+
+                <TextView
+                    android:id="@+id/textViewOrderDetailNoPlace"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="未落单:" />
+
+                <TextView
+                    android:id="@+id/textViewNotOrderPlace"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:textColor="#fd0768" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textViewSummary3"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="合计:" />
+
+                <TextView
+                    android:id="@+id/textViewOrderTotal"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:text="0.00"
+                    android:textColor="@color/Red" />
+
+                <TextView
+                    android:id="@+id/textViewOrderCountLabel"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="数量:" />
+
+                <TextView
+                    android:id="@+id/textViewOrderCount"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layoutCombineTable"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="并台餐桌:" />
+
+                <TextView
+                    android:id="@+id/textViewCombineTable"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+            </TableRow>
+        </TableLayout>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#55657d">
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:text="行" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2.9"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="菜品" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:text="价格" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="数量" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="退量" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOrderList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:fadeScrollbars="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+            <ListView
+                android:id="@+id/listViewOrderList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:fadeScrollbars="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:listSelector="@drawable/order_list_selector"
+                android:minHeight="54dp"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:background="@color/Black"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_suspend"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/order_fragment_suspend"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_free"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/order_free"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_discount"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/discount"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_remindorder"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:text="@string/remind_order"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_count"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/order_fragment_count"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_addQuantity"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:drawableTop="@drawable/add_count_selector"
+            android:enabled="false"
+            android:textColor="#fff" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_reduceQuantity"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:drawableTop="@drawable/reduce_count_selector"
+            android:enabled="false"
+            android:textColor="#fff" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_delete_dish"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/delete_dish"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_cook_method"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/cook_method"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_return_dish"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:enabled="false"
+            android:text="@string/return_dish"
+            android:textColor="@drawable/order_center_button_selector" />
+
+        <com.rainbow.smartpos.order.OrderDishButton
+            android:id="@+id/button_order_fragment_other"
+            style="@style/OrderFragmentButton"
+            android:background="@drawable/orderfragment_button"
+            android:text="@string/order_fragment_other"
+            android:textColor="@drawable/order_center_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dishContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

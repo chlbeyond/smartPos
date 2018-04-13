@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190px"
+    android:layout_height="90px">
+
+    <TextView
+        android:id="@+id/textView_slod_adapter_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="13px"
+        android:textColor="#ffffff"
+        android:textSize="22px" />
+
+    <TextView
+        android:id="@+id/textView_slod_adapter_item_deletes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5px"
+        android:text="X"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textView_slod_adapter_item_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8px"
+        android:text="@string/slod_out"
+        android:textColor="#eeeeee" />
+
+    <ImageView
+        android:id="@+id/imageView_slod_adapter_item_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/additive"
+        android:visibility="gone" />
+
+</RelativeLayout>

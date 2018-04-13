@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="order_left_top_1">#67788d</color>
+    <color name="order_left_top_2">#fe5c5c</color>
+
+    <drawable name="order_list_item_focused">#ff5500</drawable>
+    <drawable name="order_list_item_selected">#FF00FF</drawable>
+    <drawable name="order_list_item_normal">#ffffffff</drawable>
+
+    <color name="order_button_selected">#dadfe3</color>
+
+</resources>

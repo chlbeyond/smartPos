@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textViewCheckPaymentNo"
+        style="@style/OrderBottomLeftFontList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="left"
+        android:text="@string/mark" />
+
+    <TextView
+        android:id="@+id/textViewCheckPaymentName"
+        style="@style/OrderBottomLeftFontList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="@string/payment_method" />
+
+    <TextView
+        android:id="@+id/textViewCheckPaymentAmount"
+        style="@style/OrderBottomLeftFontList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/amount" />
+
+    <TextView
+        android:id="@+id/textViewCheckPaymentChange"
+        style="@style/OrderBottomLeftFontList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="right"
+        android:text="@string/change" />
+
+    <TextView
+        android:id="@+id/textViewCheckPaymentReceipt"
+        style="@style/OrderBottomLeftFontList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:gravity="right"
+        android:text="@string/payment_voucher" />
+
+</LinearLayout>

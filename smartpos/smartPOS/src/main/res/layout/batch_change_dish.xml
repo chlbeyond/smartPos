@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_fragment_order_dish_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/fragment_order_item_option_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DarkGray" />
+
+    <GridView
+        android:id="@+id/gridView_order_fragment_change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="10"
+        android:columnWidth="@dimen/table_status_fragment_item_columnWidth"
+        android:horizontalSpacing="@dimen/order_fragment_gridview_horizontalSpacing"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/order_fragment_gridview_verticalSpacing"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonContinueOrder"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_no_stroke"
+            android:text="@string/back"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/buttonOrderItemOptionChangeConfirm"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_report_button_no_stroke_selector"
+            android:enabled="false"
+            android:text="@string/change_dish"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/buttonOrderItemOptionAllChangeConfirm"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_report_button_no_stroke_selector"
+            android:enabled="false"
+            android:text="@string/change_dish_all"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/order_price_total_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingRight="20dp"
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:id="@+id/cateogry_sliding_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"></RadioGroup>
+        </HorizontalScrollView>
+
+        <com.rainbow.common.view.ProhibitViewPager
+            android:id="@+id/category_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/horizontalScrollView1"
+            android:background="@android:color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"></com.rainbow.common.view.ProhibitViewPager>
+    </RelativeLayout>
+
+</LinearLayout>

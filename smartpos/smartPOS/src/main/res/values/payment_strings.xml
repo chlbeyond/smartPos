@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_tab_menu">
+        <item>选台</item>
+        <item>点菜</item>
+    </string-array>
+</resources>

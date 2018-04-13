@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_login_background">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="设置电子秤"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启"
+            android:checked="true"
+            android:buttonTint="@color/white"
+            android:id="@+id/cb_dialog_set_balance_switch"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/tv_dialog_set_balance_exit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:id="@+id/tv_dialog_set_balance_exit"
+            android:paddingRight="20dp"
+            android:text="退出"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_dialog_set_balance_port"
+            android:background="@drawable/bg_corner_empty"
+            android:gravity="center"
+            android:text="端口" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_dialog_set_balance_baudrate"
+            android:background="@drawable/bg_corner_empty"
+            android:gravity="center"
+            android:text="波特率" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:id="@+id/tv_dialog_set_balance_databits"
+            android:background="@drawable/bg_corner_empty"
+            android:gravity="center"
+            android:text="DATABITS:8" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:id="@+id/tv_dialog_set_balance_stopbits"
+            android:layout_weight="1"
+            android:background="@drawable/bg_corner_empty"
+            android:gravity="center"
+            android:text="STOPBITS:1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:id="@+id/tv_dialog_set_balance_parity"
+            android:layout_weight="1"
+            android:background="@drawable/bg_corner_empty"
+            android:gravity="center"
+            android:text="PARITY:NONE" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:id="@+id/tv_dialog_set_balance_flowcontrol"
+            android:layout_weight="1"
+            android:background="@drawable/bg_corner_empty"
+            android:gravity="center"
+            android:text="FLOWCONTROL:NONE" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/tv_dialog_set_balance_switch"
+            android:layout_weight="1"
+            android:background="@drawable/bg_corner_blue"
+            android:gravity="center"
+            android:text="开始测试"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#efefef"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_dialog_set_balance_recevice"
+            android:text="接收: "
+            android:textSize="15sp"
+            android:textColor="#383838" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/rg_dialog_set_balance_format"
+            android:layout_toRightOf="@+id/tv_dialog_set_balance_recevice"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/rb_dialog_set_balance_text"
+                android:textSize="14sp"
+                android:text="文本" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_dialog_set_balance_hex"
+                android:textSize="14sp"
+                android:text="十六进制" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_dialog_set_balance_clear"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/title_login_background"
+            android:gravity="center"
+            android:text="清空"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_dialog_set_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="#4b4b4b"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+
+</LinearLayout>

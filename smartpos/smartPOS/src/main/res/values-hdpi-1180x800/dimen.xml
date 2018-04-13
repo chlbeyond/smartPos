@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="order_fragment_tab_size">13sp</dimen>
+    <dimen name="manager_margin_lengthways">75dip</dimen>
+    <dimen name="manager_margin_transverse">100dip</dimen>
+
+    <!-- member -->
+    <dimen name="query_recharge_member_margin">150.0dip</dimen>
+    <dimen name="recharge_op_space">10dip</dimen>
+
+    <!-- table_manage -->
+    <dimen name="table_manage_button_horizontal_margin">150dip</dimen>
+    <dimen name="table_manage_button_vertical_margin">80dip</dimen>
+</resources>

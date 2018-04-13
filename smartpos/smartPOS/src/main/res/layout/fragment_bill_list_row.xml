@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/textViewBillSN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/odd_number"
+        android:textSize="@dimen/bill_fragment_text" />
+
+    <TextView
+        android:id="@+id/textViewTableName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/desk_number"
+        android:textSize="@dimen/bill_fragment_text" />
+
+    <TextView
+        android:id="@+id/textViewPersonCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/person_count"
+        android:textSize="@dimen/bill_fragment_text" />
+
+    <TextView
+        android:id="@+id/buttonTableAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/amount"
+        android:textSize="@dimen/bill_fragment_text" />
+
+    <TextView
+        android:id="@+id/textViewClosedTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/time"
+        android:textSize="@dimen/bill_fragment_text" />
+
+</LinearLayout>

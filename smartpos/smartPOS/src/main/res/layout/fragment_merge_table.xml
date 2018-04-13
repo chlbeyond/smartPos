@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/table_manage_title_bg_color">
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:padding="@dimen/cancel_dialog_btn_padding"
+            android:src="@drawable/new_cancel"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/merge_table"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_bottom_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.25"
+        android:background="@color/table_manage_content_bg_color"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_manage_content_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hint1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/top_coners_bg"
+                        android:padding="10dp"
+                        android:text="@string/please_choose_table"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/table_status_bottom_text" />
+
+                    <GridView
+                        android:id="@+id/gridViewChangeOutTables"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/White"
+                        android:columnWidth="@dimen/merge_open_table_item_width"
+                        android:fadeScrollbars="true"
+                        android:gravity="center"
+                        android:horizontalSpacing="8dp"
+                        android:numColumns="auto_fit"
+                        android:padding="10dp"
+                        android:verticalSpacing="8dp"></GridView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/White"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/hint2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/has_choose_table"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/table_status_bottom_text" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/clear_choose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/clear_empty"
+                            android:clickable="true"
+                            android:background="@drawable/cancel_dialog_btn_bg"
+                            android:textColor="@color/title_table_background"
+                            android:textSize="@dimen/table_status_bottom_text" />
+                    </LinearLayout>
+
+                    <GridView
+                        android:id="@+id/gridViewChangeInTables"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnWidth="@dimen/table_status_fragment_item_columnWidth"
+                        android:fadeScrollbars="true"
+                        android:gravity="center"
+                        android:horizontalSpacing="8dp"
+                        android:numColumns="auto_fit"
+                        android:padding="10dp"
+                        android:verticalSpacing="8dp"></GridView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/bottom_coners_bg"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/sure_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:textSize="@dimen/main_menu_text_size"
+                    android:paddingBottom="@dimen/check_fragment_print_paddingTop"
+                    android:paddingTop="@dimen/check_fragment_print_paddingTop"
+                    android:clickable="true"
+                    android:text="@string/sure"
+                    android:textColor="@color/White" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

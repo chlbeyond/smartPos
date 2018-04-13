@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/transparent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@android:color/transparent"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/number_pad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.3"
+        android:background="@drawable/auth_dialog_bg"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <RelativeLayout
+            android:id="@+id/dialog_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/op_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/input_password_or_swiping_card"
+                android:textColor="@color/Black"
+
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <ImageButton
+                android:id="@+id/iv_close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:clickable="true"
+                android:paddingBottom="@dimen/place_dish_dish_op_cancel_btn_paddingleft"
+                android:paddingLeft="@dimen/place_dish_dish_op_cancel_btn_paddingleft"
+                android:paddingRight="@dimen/place_dish_dish_op_cancel_btn_paddingright"
+                android:paddingTop="@dimen/place_dish_dish_op_cancel_btn_paddingright"
+                android:src="@drawable/new_cancel" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_3_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonPassWord8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/auth_pwd_4_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextRFID"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/transparent"
+                android:ems="10" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonNumPad7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="7"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <Button
+                    android:id="@+id/buttonNumPad8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="8"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <Button
+                    android:id="@+id/buttonNumPad9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="9"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonNumPad4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="4"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <Button
+                    android:id="@+id/buttonNumPad5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="5"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <Button
+                    android:id="@+id/buttonNumPad6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="6"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonNumPad1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="1"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <Button
+                    android:id="@+id/buttonNumPad2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="2"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <Button
+                    android:id="@+id/buttonNumPad3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="3"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/buttonNumPadBack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_delete_btn_bg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/number_back_black" />
+
+                <Button
+                    android:id="@+id/buttonNumPad0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_number_btn_bg"
+                    android:text="0"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/table_status_fragment_text" />
+
+                <ImageButton
+                    android:id="@+id/buttonNumPadC"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/auth_delete_btn_bg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/number_delete_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

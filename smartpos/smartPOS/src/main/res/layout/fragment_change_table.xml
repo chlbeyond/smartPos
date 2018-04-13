@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="@color/table_manage_title_bg_color"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/OrderTopLeftFontField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/order_fragment_table_name_hint"
+                android:textColor="@color/White"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/textViewTableName"
+                style="@style/OrderTopLeftFontField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0001桌"
+                android:textColor="@color/White"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cancel_dialog_btn_bg"
+            android:padding="@dimen/cancel_dialog_btn_padding"
+            android:src="@drawable/new_cancel"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/change_table"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_bottom_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.25"
+        android:background="@color/table_manage_content_bg_color"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_manage_content_bg"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/top_coners_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="match_parent" />
+
+                <com.rainbow.common.view.MDMRadioButton
+                    android:id="@+id/change_out_table"
+                    android:layout_width="wrap_content"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/change_table_first_step_selector"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:textSize="@dimen/main_menu_text_size"
+                    android:textColor="@drawable/change_table_menu_text_selector"
+                    android:text="@string/choose_change_out_table" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/return_dish_text_enabled_false" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="match_parent" />
+
+                <com.rainbow.common.view.MDMRadioButton
+                    android:id="@+id/change_in_table"
+                    android:layout_width="wrap_content"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/change_table_second_step_selector"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:textSize="@dimen/main_menu_text_size"
+                    android:textColor="@drawable/change_table_menu_text_selector"
+                    android:text="@string/choose_change_in_table" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/return_dish_text_enabled_false" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="match_parent" />
+
+                <com.rainbow.common.view.MDMRadioButton
+                    android:id="@+id/sure_change_table"
+                    android:layout_width="wrap_content"
+                    android:button="@null"
+                    android:drawablePadding="5dp"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/change_table_three_step_selector"
+                    android:gravity="center"
+                    android:textSize="@dimen/main_menu_text_size"
+                    android:textColor="@drawable/change_table_menu_text_selector"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sure_change_table" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutChange"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"></FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_com_printer"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="串口"
+            android:textColor="@color/Black"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/textView_com_printer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="right|center" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#EFEFEF" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_com_baud_rate"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="波特率"
+            android:textColor="@color/Black"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/textView_com_baud_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="right|center" />
+    </RelativeLayout>
+
+</LinearLayout>

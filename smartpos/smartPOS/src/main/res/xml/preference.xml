@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * This file is part of DroidPHP
+  ~  *
+  ~  * (c) 2014 Shushant Kumar
+  ~  *
+  ~  * For the full copyright and license information, please view the LICENSE
+  ~  * file that was distributed with this source code.
+  ~  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- not yet implemented -->
+    <!--
+    <PreferenceCategory android:title="CONFIGURATIONS">
+        <CheckBoxPreference
+                android:title="Lock Wifi"
+                android:key="enable_lock_wifi"
+                android:summary="Keep wifi active when the server is running"
+                android:defaultValue="false"/>
+        <CheckBoxPreference
+                android:title="Screen Always On"
+                android:key="enable_screen_on"
+                android:summary="The screen never enter sleep mode when the server is running"
+                android:defaultValue="true"/>
+    </PreferenceCategory>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <PreferenceCategory android:title="代理服务">
+        <EditTextPreference
+            android:defaultValue="localhost"
+            android:key="agent_address"
+            android:summary="localhost"
+            android:title="代理地址"></EditTextPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="device_registered"
+            android:summary="是否已经登记"
+            android:title="此机是否注册" />
+        <CheckBoxPreference
+            android:key="public_device"
+            android:summary="勾选此选项，落单后会自动登出"
+            android:title="此机是否为公共用机" />
+        <CheckBoxPreference
+            android:key="is_auto_goto_cooking"
+            android:summary="勾选此选项，当菜品有关联常用做法时,将会自动转入"
+            android:title="是否转入常用做法" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="其他">
+        <Preference
+            android:summary="你的收银管家"
+            android:title="三亿网络科技">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.sanyipos.com" />
+        </Preference>
+        <Preference
+            android:defaultValue="localhost"
+            android:key="access_code"
+            android:summary="设备云端计入码"
+            android:title="接入码" />
+        <Preference
+            android:key="device_id"
+            android:summary="本机的设备唯一识别码"
+            android:title="设备号" />
+        <Preference
+            android:key="app_version"
+            android:summary="1.1.0"
+            android:title="版本" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

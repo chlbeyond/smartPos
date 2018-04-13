@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rainbow.common.view.HackyDrawerLayout
+
+        android:id="@+id/drawerlayout_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/order_left_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_toLeftOf="@+id/dishContainer"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:background="@color/op_dialog_button_layout_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <include layout="@layout/include_table_info" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            android:padding="10dp">
+
+                            <ListView
+                                android:id="@+id/listViewOrderList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:footerDividersEnabled="true"
+                                android:minHeight="54dp" />
+
+                            <LinearLayout
+                                android:id="@+id/empty_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/null_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/null_content"
+                                    android:textColor="#AAAAAA"
+                                    android:textSize="@dimen/table_status_bottom_text" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/order_can_second"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:background="@color/op_dialog_button_layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentTop="true"
+                        android:background="#ffffff" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:layout_height="wrap_content"
+                            android:text="已满足第二份优惠条件,可选择2份优惠菜"
+                            android:maxLines="1"
+                            android:textSize="12sp"
+                            android:textColor="#000"
+                            android:layout_gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:src="@drawable/arrows" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/op_dialog_button_layout_bg">
+
+                    <LinearLayout
+                        android:id="@+id/order_price_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_price_total_hint"
+                            android:textSize="@dimen/main_menu_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewNotOrderPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textSize="@dimen/table_status_bottom_text"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/Gray"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dishContainer"
+                android:layout_alignParentRight="true"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_fragment_list_bg"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_check"
+            android:layout_width="1300px"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_order_payinfo" />
+
+            <include layout="@layout/layout_order_payment" />
+        </LinearLayout>
+    </com.rainbow.common.view.HackyDrawerLayout>
+</RelativeLayout>

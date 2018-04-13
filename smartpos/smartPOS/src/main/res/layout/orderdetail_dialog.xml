@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_detail_dailog_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView_order_detail_dialog_reduce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="@color/new_back"
+            android:textSize="@dimen/main_menu_text_size" />
+
+        <TextView
+            android:id="@+id/textView_order_detail_dialog_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/textView_order_detail_dialog_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="十"
+            android:textColor="@color/new_back"
+            android:textSize="@dimen/main_menu_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CDCDCD" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_dialog_delete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/delete_dish"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_dialog_free"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/free_dish"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_dialog_changeprice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/change_price"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_cook_method"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/food_property"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+
+    <Button
+        android:id="@+id/button_order_detail_ingrident"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:text="@string/more_ingridient"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+
+    <Button
+        android:id="@+id/button_order_detail_remark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:text="@string/remarks"
+        android:textColor="@color/new_back"
+        android:textSize="@dimen/main_menu_text_size" />
+</LinearLayout>

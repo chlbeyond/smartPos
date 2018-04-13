@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="@color/table_manage_title_bg_color">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:clickable="true"
+            android:padding="20dp"
+            android:src="@drawable/new_cancel" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/slod_out_manage"
+            android:textColor="@color/White"
+            android:textSize="@dimen/table_status_bottom_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.25"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/slod_out_manager_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/member_manager_bg_normal"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/can_slod_out"
+                style="@style/member_manager_radiobutton"
+                android:checked="true"
+                android:drawableLeft="@drawable/new_slod_out_selector"
+                android:text="@string/can_slod_out" />
+
+            <RadioButton
+                android:id="@+id/has_slod_out"
+                style="@style/member_manager_radiobutton"
+                android:drawableLeft="@drawable/current_slod_out_selector"
+                android:text="@string/has_slod_out" />
+
+            <RadioButton
+                android:id="@+id/has_stop_sale"
+                style="@style/member_manager_radiobutton"
+                android:drawableLeft="@drawable/current_slod_out_selector"
+                android:text="@string/has_stop_sale" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/slod_out_frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

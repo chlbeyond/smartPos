@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#dddee9"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_pay_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提示"
+            android:textColor="@color/Black"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dialog_pay_success_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/new_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CECECE" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/Black"
+        android:textSize="24px"
+        android:textStyle="bold"
+        android:id="@+id/dialog_pay_success_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#dddee9"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/dialog_pay_success_confirm"
+            android:text="确 定"
+            android:background="@drawable/button_selector"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="24px"
+            android:layout_margin="15dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/dialog_pay_success_cancel"
+            android:text="返 回"
+            android:visibility="gone"
+            android:background="@drawable/button_selector"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="24px"
+            android:layout_margin="10dp"
+            />
+        </LinearLayout>
+</LinearLayout>

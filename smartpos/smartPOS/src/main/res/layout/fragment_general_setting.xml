@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/widget_stroke"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke"
+        android:padding="10dp"
+        android:text="@string/setting"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/table_status_bottom_text" />
+
+    <LinearLayout
+        android:id="@+id/agent_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_gray"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/agent_address"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <TextView
+            android:id="@+id/agent_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/app_info_text_size"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/is_public_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_white"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/is_public_checkbox_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_box" />
+
+            <ImageView
+                android:id="@+id/is_public_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_box"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/is_public_checkbox_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/is_public_device"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/is_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="勾选此选项,落单后会自动登出"
+                android:textSize="@dimen/app_info_text_size"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/is_pre_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_white"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/is_pre_checkbox_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_box" />
+
+            <ImageView
+                android:id="@+id/is_pre_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_box"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/is_pre_checkbox_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="预打印后是否退出结账页面"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/is_pre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="勾选此选项,预打印后会返回台况"
+                android:textSize="@dimen/app_info_text_size"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/select_network_printer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_gray"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/select_network_printer"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/table_status_bottom_text" />
+
+        <TextView
+            android:id="@+id/select_network_printer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/app_info_text_size"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/available_private_cook_method_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_stroke_white"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/available_private_cook_method_checkbox_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_box" />
+
+            <ImageView
+                android:id="@+id/available_private_cook_method_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_box"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/available_private_cook_method_checkbox_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/is_show_soft_keyboard_in_member_manage"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/available_private_cook_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="勾选此选项,当使用会员功能时,不会弹出软键盘"
+                android:textSize="@dimen/app_info_text_size"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

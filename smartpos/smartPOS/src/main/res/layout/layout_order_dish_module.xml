@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/order_horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263554"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tableRowCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"></TableRow>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/dishFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/order_horizontalScrollView"
+        android:orientation="vertical" />
+    <!--
+    <fragment
+        android:id="@+id/id_fragment_title"
+        android:name="com.rainbow.smartpos.order.OrderDishItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/order_horizontalScrollView" />
+-->
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/horizontalScrollView1">
+
+        <fragment
+            android:id="@+id/id_fragment_title"
+            android:name="com.rainbow.smartpos.order.OrderDishItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    -->
+    <!--
+    <RelativeLayout
+        android:id="@+id/linearLayout_order_dish_4.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalScrollView1"
+        android:background="#9BAACB"
+        android:orientation="horizontal">
+
+        <com.rainbow.common.view.SlidingTabLayout
+            android:id="@+id/cateogry_sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_back"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <com.rainbow.common.view.ProhibitViewPager
+            android:id="@+id/order_dish_category_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cateogry_sliding_tabs"
+            android:focusable="false"
+            android:focusableInTouchMode="false"></com.rainbow.common.view.ProhibitViewPager>
+    </RelativeLayout>
+-->
+
+</RelativeLayout>
+

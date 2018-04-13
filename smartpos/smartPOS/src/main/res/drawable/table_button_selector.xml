@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/table_status_button_pressed" android:state_pressed="true">
+        <shape>
+            <stroke android:width="3dp" android:color="#fff" />
+
+            <solid android:color="#fff" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="3dp" android:color="#fff" />
+
+            <solid android:color="#FF7CFC00" />
+        </shape>
+    </item>
+
+</selector>

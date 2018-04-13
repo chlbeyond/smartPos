@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rainbow.smartpos.order.OrderDishDetailLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/order_fragment_goods_item_height"
+    android:descendantFocusability="blocksDescendants">
+
+    <FrameLayout
+        android:id="@+id/OrderDishDetailInnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewDishDetailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:lines="2"
+            android:singleLine="false"
+            android:text="1111111"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/textViewDishPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|right"
+            android:text="¥22.00"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/order_fragment_order_dish_price" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxDishChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right" />
+
+</com.rainbow.smartpos.order.OrderDishDetailLayout>

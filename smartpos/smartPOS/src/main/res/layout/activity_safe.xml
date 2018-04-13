@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_setting_leftmenu"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_report_today_bill"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@color/Black"
+            android:textSize="24px" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/linearLayout_setting_leftmenu"
+        android:background="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/view_space"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="当前用户:"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textView_current_staff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:text="工号:"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textView_current_sn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#bfbfbf"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="原始密码:"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <EditText
+                android:id="@+id/editText_old_password"
+                style="?android:attr/textViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="原始密码(三位数)"
+                android:inputType="numberPassword"
+                android:maxLength="3"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/general_setting_textcolor"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textView_old_password_reminder"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/table_status_fragment_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="新密码:"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <EditText
+                android:id="@+id/editText_new_password"
+                style="?android:attr/textViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="填写密码(仅支持数字)"
+
+                android:inputType="numberPassword"
+                android:maxLength="3"
+                android:password="true"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/general_setting_textcolor"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <TextView
+                android:id="@+id/textView_new_password_reminder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/table_status_fragment_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="确认密码:"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/table_status_fragment_text" />
+
+            <EditText
+                android:id="@+id/editText_new_password_confirm"
+                style="?android:attr/textViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="再次填写确认"
+                android:inputType="numberPassword"
+                android:maxLength="3"
+                android:password="true"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/general_setting_textcolor"
+                android:textSize="@dimen/table_status_fragment_text"></EditText>
+
+            <TextView
+                android:id="@+id/textView_new_password_reminder_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/table_status_fragment_text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_dialog_ok"
+            style="@style/MainActionButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="确定" />
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <Button
+                android:id="@+id/button_dialog_cancel"
+                style="@style/MainActionButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/button_dialog_ok"
+                style="@style/MainActionButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="确定" />
+        </LinearLayout> -->
+
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

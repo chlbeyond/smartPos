@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/queryLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/numberPadContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/AliceBlue"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHint"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/voucher_service_title"
+                android:text="text"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextInputValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/please_input"
+                    android:inputType="none"
+                    android:textColor="#67788d"
+                    android:textSize="@dimen/voucher_service_title">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="7"
+                android:background="@color/White"
+                android:padding="5dp">
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/num_dialog_magin">
+
+                            <Button
+                                android:id="@+id/buttonNumPad1"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_1" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad2"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_2" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad3"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/buttonNumPad4"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_4" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad5"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_5" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad6"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_6" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/buttonNumPad7"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_7" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad8"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_8" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad9"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/num_dialog_magin">
+
+                            <ImageButton
+                                android:id="@+id/buttonNumPadCancel"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:src="@drawable/login_cancel_selector" />
+
+                            <Button
+                                android:id="@+id/buttonNumPad0"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:text="@string/numpad_0" />
+
+                            <ImageButton
+                                android:id="@+id/buttonNumPadDelete"
+                                style="@style/OrderOptionButton"
+                                android:layout_width="@dimen/num_dialog_width"
+                                android:layout_height="@dimen/num_dialog_height"
+                                android:src="@drawable/login_delete_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/queryButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                style="@style/CancelButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/Black" />
+
+            <Button
+                android:id="@+id/buttonQuery"
+                style="@style/OKButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/query"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--  <RelativeLayout
+         android:layout_toRightOf="@id/queryLayout"
+         android:layout_alignBottom="@id/queryLayout"
+         android:background="@color/AliceBlue"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button
+             android:id="@+id/buttonSure"
+             style="@style/CancelButton"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_margin="1dp"
+             android:paddingBottom="10dp"
+             android:paddingTop="10dp"
+             android:text="@string/sure"
+             android:textColor="@color/Black" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_above="@id/buttonSure"
+             android:orientation="vertical" >
+
+             <ListView
+                 android:id="@+id/queryResult"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>
+         </LinearLayout>
+
+
+     </RelativeLayout> -->
+
+</RelativeLayout>

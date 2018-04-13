@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_setting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/member_manager_bg_normal"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton_setting_local_setting"
+            style="@style/member_manager_radiobutton"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:drawableLeft="@drawable/setting_local_selector"
+            android:text="@string/local_setting" />
+
+        <RadioButton
+            android:id="@+id/radioButton_setting_print_setting"
+            style="@style/member_manager_radiobutton"
+            android:drawableLeft="@drawable/setting_print_selector"
+            android:text="@string/printer_settting" />
+    </RadioGroup>
+
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/linearLayout_setting_leftmenu"
+        android:background="@color/Black" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_setting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/view_space"
+        android:layout_weight="7"></FrameLayout>
+</LinearLayout>

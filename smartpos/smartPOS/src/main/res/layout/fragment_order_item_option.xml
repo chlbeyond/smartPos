@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderOptionContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tableRow101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textViewOrderItemDishName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="@string/order_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/promoter"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <Button
+                android:id="@+id/buttonOrderOptionSales"
+                style="@style/CheckButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刘翠华"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow102"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/order_item_option_divider"></TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow103"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textViewTableMergeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/order_quantity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <Button
+                android:id="@+id/buttonOrderOptionDecrease"
+                style="@style/CommonButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <TextView
+                android:id="@+id/textViewOrderOptionDishCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <Button
+                android:id="@+id/buttonOrderOptionIncrease"
+                style="@style/CommonButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/weight"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <Button
+                android:id="@+id/buttonOrderOptionWeight"
+                style="@style/CommonButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <TextView
+                android:id="@+id/textViewOrderOptionUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="left"
+                android:text="@string/gram"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow104"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/DarkGray"></TableRow>
+
+        <TableRow
+            android:id="@+id/orderItemOptionCookingMethod12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/TextView110"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cook_method"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <HorizontalScrollView
+                android:id="@+id/hvCookingMethod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:fadeScrollbars="false"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCookingMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow105"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/DarkGray"></TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow106"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/TextView103"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/more_ingridient"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:fadeScrollbars="false"
+                android:scrollbarAlwaysDrawVerticalTrack="true">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDishIngredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow107"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/order_item_option_divider"></TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow108"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/order_item_option_divider"></TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow111"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/order_item_option_divider"></TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow109"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/TextView102"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/activity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/fragment_order_item_option_title" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDishPromptionWrapper"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <HorizontalScrollView
+                    android:id="@+id/hvDishPromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fadeScrollbars="false">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutDishPromotion"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textViewDishPromotionDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </TableRow>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow110"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonContinueOrder"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/buttonOrderItemOptionConfirm"
+            style="@style/MainActionButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/sure"
+            android:textColor="@color/White" />
+    </TableRow>
+
+</LinearLayout>

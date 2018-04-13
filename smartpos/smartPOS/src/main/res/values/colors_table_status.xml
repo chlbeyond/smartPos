@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="order_item_option_button">#649290</color>
+    <color name="table_status_menu">#234374</color>
+    <color name="table_combine">#0fbf71</color>
+    <color name="table_status_right_bg_select">#434f65</color>
+
+</resources>

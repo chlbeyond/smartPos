@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_login_background">
+
+    <GridView
+        android:id="@+id/gridViewTables"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/table_status_fragment_item_columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="15px"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:verticalSpacing="20px"></GridView>
+
+    <TableRow
+        android:id="@+id/tableRowOkCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.8"
+        android:background="@color/main_bg"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/buttonMultiSelectCancel"
+            style="@style/CancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha=".8"
+            android:background="@drawable/place_detail_first_button_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/buttonMultiSelectOK"
+            style="@style/OKButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha=".8"
+            android:background="@drawable/place_detail_button_selector"
+            android:text="@string/ok"
+            android:textColor="@color/White" />
+    </TableRow>
+
+</FrameLayout>

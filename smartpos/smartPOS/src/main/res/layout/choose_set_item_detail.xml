@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rainbow.smartpos.order.CookMethodItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="@dimen/merge_open_table_item_width"
+    android:layout_height="@dimen/merge_open_table_item_height"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:id="@+id/OrderDishDetailInnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewDishUnitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:lines="2"
+            android:text=""
+            android:textSize="@dimen/main_menu_text_size"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/textViewDishUnitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="¥22.00"
+            android:textColor="@color/order_fragment_price_textcolor"
+            android:textSize="@dimen/app_info_text_size" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/flag_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/additive" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:singleLine="false"
+        android:visibility="gone"
+        android:src="@drawable/cancel_select" />
+
+    <!-- <CheckBox
+        android:id="@+id/textViewDishSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="@color/Black" /> -->
+
+</com.rainbow.smartpos.order.CookMethodItemLayout>

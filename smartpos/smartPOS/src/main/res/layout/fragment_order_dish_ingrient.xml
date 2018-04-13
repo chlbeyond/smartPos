@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView103"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="加料"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/fragment_order_item_option_title" />
+
+    <TableRow
+        android:id="@+id/tableRow105"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DarkGray"></TableRow>
+
+    <TextView
+        android:id="@+id/textView_order_fragment_ingridient"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/fragment_order_item_option_title" />
+
+    <GridView
+        android:id="@+id/gridView_order_fragment_ingridient"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="8"
+        android:columnWidth="@dimen/table_status_fragment_item_columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="8dp"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonContinueOrder"
+            style="@style/order_fragment_button"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_bg_no_stroke"
+            android:textColor="@color/Black"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/buttonOrderItemOptionConfirm"
+            style="@style/order_fragment_button"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/table_report_button_no_stroke_selector"
+            android:text="@string/sure" />
+    </LinearLayout>
+
+</LinearLayout>

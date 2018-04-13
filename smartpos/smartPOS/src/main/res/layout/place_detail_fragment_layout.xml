@@ -1,0 +1,522 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutPlace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/place_left_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/order_price_total_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_table_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.36"
+            android:background="@color/op_dialog_button_layout_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/call_up"
+                    style="@style/place_fragment_change_dish_layout">
+
+                    <TextView
+                        style="@style/place_fragment_change_dish_text"
+                        android:drawableTop="@drawable/call_dish_selector"
+                        android:text="@string/call_up" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/order_price_total_bg" />
+
+                <LinearLayout
+                    android:id="@+id/pull_food"
+                    style="@style/place_fragment_change_dish_layout">
+
+                    <TextView
+                        style="@style/place_fragment_change_dish_text"
+                        android:drawableTop="@drawable/pull_dish_selector"
+                        android:text="@string/push_dish" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/order_price_total_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/return_dish"
+                    style="@style/place_fragment_change_dish_layout">
+
+                    <TextView
+                        style="@style/place_fragment_change_dish_text"
+                        android:drawableTop="@drawable/return_dish_selector"
+                        android:text="@string/return_dish" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/order_price_total_bg" />
+
+                <LinearLayout
+                    android:id="@+id/change_dish"
+                    style="@style/place_fragment_change_dish_layout">
+
+                    <TextView
+                        style="@style/place_fragment_change_dish_text"
+                        android:drawableTop="@drawable/change_dish_selector"
+                        android:text="@string/change_dish" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/order_price_total_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/free_dish"
+                    style="@style/place_fragment_change_dish_layout">
+
+                    <TextView
+                        style="@style/place_fragment_change_dish_text"
+                        android:drawableTop="@drawable/free_order_selector"
+                        android:text="@string/free_dish" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/order_price_total_bg" />
+
+                <LinearLayout
+                    android:id="@+id/order_op_log"
+                    style="@style/place_fragment_change_dish_layout">
+
+                    <TextView
+                        style="@style/place_fragment_change_dish_text"
+                        android:drawableTop="@drawable/order_op_log_selector"
+                        android:text="@string/order_op_log" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_people_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/person_count" />
+
+            <TextView
+                android:id="@+id/textViewPersonCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:text="人数:2人"
+                android:textSize="@dimen/main_menu_text_size" />
+
+
+            <TextView
+                android:id="@+id/updatePersonCount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/update"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/cancel_dialog_btn_padding"
+                android:paddingRight="@dimen/cancel_dialog_btn_padding"
+                android:text="@string/update"
+                android:textColor="@color/title_table_background"
+                android:textSize="@dimen/table_status_bottom_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_bill_remark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/person_count" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="备注："
+                    android:textSize="@dimen/main_menu_text_size" />
+
+                <TextView
+                    android:id="@+id/textViewBillRemark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="zz"
+                    android:textSize="@dimen/main_menu_text_size" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/updateBillRemark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/update"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/cancel_dialog_btn_padding"
+                android:paddingRight="@dimen/cancel_dialog_btn_padding"
+                android:text="@string/update"
+                android:textColor="@color/title_table_background"
+                android:textSize="@dimen/table_status_bottom_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/bill_state" />
+
+            <TextView
+                android:id="@+id/textViewBillState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:text="账单状态:"
+                android:textSize="@dimen/main_menu_text_size" />
+
+            <TextView
+                android:id="@+id/clearBillState"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/clear"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/cancel_dialog_btn_padding"
+                android:paddingRight="@dimen/cancel_dialog_btn_padding"
+                android:text="@string/clear"
+                android:textColor="@color/title_table_background"
+                android:textSize="@dimen/table_status_bottom_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/reprint_table_bill" />
+
+            <TextView
+                android:id="@+id/textViewTableBill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:text="台单:"
+                android:textSize="@dimen/main_menu_text_size" />
+
+
+            <TextView
+                android:id="@+id/reprintTableBill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/reprint_bill"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/cancel_dialog_btn_padding"
+                android:paddingRight="@dimen/cancel_dialog_btn_padding"
+                android:text="补打"
+                android:textColor="@color/title_table_background"
+                android:textSize="@dimen/table_status_bottom_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.37"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/clearBillStateHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="@string/clear_bill_state_hint"
+                android:textColor="@color/order_fragment_price_textcolor"
+                android:textSize="@dimen/app_info_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Gray"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/place_right_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/order_fragment_list_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/new_back"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/textViewPlaceFragmentBillAmount"
+                style="@style/OrderTopLeftFontField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/bill_amount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:id="@+id/textViewBillAmount"
+                style="@style/OrderTopLeftFontField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="210.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/choose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cancel_dialog_btn_bg"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/new_cancel" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.81"
+            android:background="@color/White"
+            android:padding="10dp">
+
+
+            <ListView
+                android:id="@+id/dishRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/White"></ListView>
+
+
+            <LinearLayout
+                android:id="@+id/empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/null_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/null_content"
+                    android:textColor="#AAAAAA"
+                    android:textSize="@dimen/table_status_bottom_text" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/continue_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/op_dialog_button_layout_bg">
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/continue_order"
+                android:background="@drawable/place_detail_first_button_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/place_dish_btn_padding"
+                android:paddingTop="@dimen/place_dish_btn_padding"
+                android:text="去结账"
+                android:textColor="@drawable/return_dish_button_text_color_selector"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+            <Button
+                android:id="@+id/continue_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/place_detail_button_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/place_dish_btn_padding"
+                android:paddingTop="@dimen/place_dish_btn_padding"
+                android:text="@string/continue_order"
+                android:textColor="@drawable/return_dish_button_text_color_selector"
+                android:textSize="@dimen/table_status_bottom_text" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sure_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/sure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_selector"
+                android:text="@string/sure"
+                android:textColor="@drawable/return_dish_button_text_color_selector"
+                android:textSize="@dimen/table_status_bottom_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

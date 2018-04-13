@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#33B5E5"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberPadContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/AliceBlue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/promptText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/accredit_verify"
+                android:textSize="@dimen/voucher_service_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextInputValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/please_input"
+                android:inputType="none"
+                android:textColor="#67788d">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="7"
+            android:background="@color/White"
+            android:padding="5dp">
+
+            <ProgressBar
+                android:id="@+id/progressBarVerify"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/num_dialog_magin">
+
+                        <Button
+                            android:id="@+id/buttonNumPad1"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_1" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad2"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_2" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad3"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/buttonNumPad4"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_4" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad5"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_5" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad6"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/buttonNumPad7"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_7" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad8"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_8" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad9"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/num_dialog_magin">
+
+                        <ImageButton
+                            android:id="@+id/buttonNumPadCancel"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:src="@drawable/login_cancel_selector" />
+
+                        <Button
+                            android:id="@+id/buttonNumPad0"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:text="@string/numpad_0" />
+
+                        <ImageButton
+                            android:id="@+id/buttonNumPadDelete"
+                            style="@style/OrderOptionButton"
+                            android:layout_width="@dimen/coupon_service_num_dialog_width"
+                            android:layout_height="@dimen/coupon_service_num_dialog_height"
+                            android:src="@drawable/login_delete_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNumberPadCancel"
+            style="@style/CancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/buttonNumberPadOk"
+            style="@style/OKButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+</LinearLayout>

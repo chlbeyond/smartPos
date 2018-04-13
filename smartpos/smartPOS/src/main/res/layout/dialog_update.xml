@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_dialog_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="#000"
+        android:textSize="@dimen/table_status_fragment_text" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textView_dialog_update_confirm"
+        android:text="确定"
+        android:layout_margin="15dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#646dfd"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/table_status_fragment_text"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

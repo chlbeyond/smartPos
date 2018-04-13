@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootThirdPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/holo_blue_dark"
+    android:background="@android:color/holo_blue_dark"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        android:id="@+id/textView_third_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_use"
+        android:textColor="@color/white"
+        android:textSize="38px"
+        app:layout_marginTopPercent="20%" />
+
+    <TextView
+        android:id="@+id/textView_third_rainbow_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_third_welcome"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rainbow_system"
+        android:textColor="@color/white"
+        android:textSize="38px" />
+
+    <TextView
+        android:id="@+id/textView_third_choose_version_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_third_rainbow_system"
+        android:layout_centerHorizontal="true"
+        android:text="@string/install_type"
+        android:textColor="@color/white"
+        android:textSize="25px"
+        app:layout_marginTopPercent="8%" />
+
+    <Button
+        android:id="@+id/button_third_pro_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_third_choose_version_type"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sliding_button_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/pro_version"
+        android:textColor="@color/white"
+
+        app:layout_widthPercent="20%"
+        android:textSize="20px"
+        app:layout_marginTopPercent="5%" />
+
+    <Button
+        android:id="@+id/button_third_free_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sliding_button_selector"
+        android:layout_below="@+id/button_third_pro_version"
+        android:layout_centerHorizontal="true"
+        android:text="@string/free_version"
+        android:textColor="@color/white"
+        android:textSize="20px"
+        app:layout_widthPercent="20%"
+        app:layout_marginTopPercent="1%" />
+</android.support.percent.PercentRelativeLayout>

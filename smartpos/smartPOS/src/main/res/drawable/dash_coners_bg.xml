@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+
+            <solid android:color="@color/op_dialog_button_layout_bg" />
+
+            <stroke android:dashGap="3dp" android:dashWidth="6dp" android:width="1dp" android:color="@color/dash_line_color" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+
+            <solid android:color="#FFFFFF" />
+
+            <stroke android:dashGap="3dp" android:dashWidth="6dp" android:width="1dp" android:color="@color/dash_line_color" />
+        </shape>
+    </item>
+
+</selector>

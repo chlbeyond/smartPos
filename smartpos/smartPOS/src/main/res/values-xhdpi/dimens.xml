@@ -1,0 +1,101 @@
+<resources>
+
+    <dimen name="num_dialog_width">100.0dip</dimen>
+    <dimen name="num_dialog_height">75.0dip</dimen>
+    <dimen name="num_dialog_magin">5dp</dimen>
+    <dimen name="confirm_button_text">17dp</dimen>
+    <dimen name="login_button_text">27dp</dimen>
+    <dimen name="title_text1">13dp</dimen>
+    <dimen name="title_text2">20sp</dimen>
+    <dimen name="title_text3">10dp</dimen>
+    <dimen name="fragment_check_text">12dp</dimen>
+    <dimen name="fragment_check_money">21dp</dimen>
+    <dimen name="sliding_textsize">7dp</dimen>
+    <dimen name="sliding_textsize2">10dp</dimen>
+    <dimen name="table_status_fragment_text">18dp</dimen>
+    <dimen name="MenuTextStyletextsize">18sp</dimen>
+    <!-- used in table status bottom -->
+    <dimen name="table_status_bottom">18sp</dimen>
+    <dimen name="order_operation_option_minus">40sp</dimen>
+    <!-- Sliding Tablayout size -->
+    <dimen name="tab_view_text_size_sp">17dp</dimen>
+    <dimen name="order_tab_view_text_size_sp">11dp</dimen>
+    <dimen name="tab_view_radius_text_size_sp">8dp</dimen>
+    <!-- table_status_fragment_item -->
+    <dimen name="table_status_fragment_item_height">95dp</dimen>
+    <dimen name="order_fragment_goods_item_height">80dp</dimen>
+    <dimen name="table_status_fragment_item_width">140dp</dimen>
+    <dimen name="dish_sliod_out_mark_width">40dip</dimen>
+    <dimen name="dish_sliod_out_mark_textsize">14sp</dimen>
+    <dimen name="dish_sliod_out_mark_height">20dip</dimen>
+    <dimen name="table_status_fragment_item_spent_size">15dp</dimen>
+    <dimen name="table_status_fragment_item_num_size">21dp</dimen>
+    <dimen name="order_fragment_order_dish_price">12dp</dimen>
+    <dimen name="table_status_fragment_item_columnWidth">135dp</dimen>
+    <dimen name="order_fragment_goods_item_columnWidth">140dp</dimen>
+    <dimen name="table_status_fragment_item_margintop">18dp</dimen>
+    <dimen name="handover_preview">17dp</dimen>
+    <dimen name="check_fragment_promotion_text_size">17.0sp</dimen>
+    <dimen name="handover_preview_list_text_size">13dp</dimen>
+    <dimen name="handover_preview_list_vouvher_text_size">10dp</dimen>
+    <!-- order fragment -->
+    <dimen name="order_fragment_detail_text">15dp</dimen>
+    <dimen name="order_fragment_gridview_horizontalSpacing">10dp</dimen>
+    <dimen name="order_fragment_gridview_verticalSpacing">10dp</dimen>
+    <dimen name="order_fragment_tab_size">9dp</dimen>
+    <!-- check fragment -->
+    <dimen name="check_fragment_detail_text">17dp</dimen>
+    <dimen name="check_fragment_dialog">15dp</dimen>
+    <dimen name="check_fragment_dialog_sales">20dp</dimen>
+    <!-- fragment order item option -->
+    <dimen name="fragment_order_item_option_title">20dp</dimen>
+    <dimen name="fragment_order_item_option_text">10dp</dimen>
+
+    <!-- voucher_service -->
+    <dimen name="voucher_service">18sp</dimen>
+    <dimen name="voucher_service_title">21dp</dimen>
+    <dimen name="voucher_service_button_size">17dp</dimen>
+    <dimen name="voucher_service_edittext">17dp</dimen>
+    <!-- bill_fragment -->
+    <dimen name="bill_fragment_text">15dp</dimen>
+    <dimen name="bill_fragment_table_status_text">15dp</dimen>
+    <dimen name="Bill_fragment_Button">17dp</dimen>
+    <dimen name="bill_fragment_title_text">18sp</dimen>
+    <dimen name="table_status_item_detail">1dp</dimen>
+    <!-- dailystat -->
+    <dimen name="dailystat_text">15sp</dimen>
+    <!-- login -->
+    <dimen name="login_activity_reminder">25dp</dimen>
+
+    <dimen name="manager_margin_lengthways">150dip</dimen>
+    <dimen name="manager_margin_transverse">200dip</dimen>
+    <dimen name="check_fragment_pay_radiu">5dp</dimen>
+
+    <dimen name="table_status_bottom_text">12.0sp</dimen>
+    <dimen name="voucher_service_btn_padding">10dp</dimen>
+
+    <dimen name="main_app_name_text">18sp</dimen>
+    <dimen name="table_status_paddingtop">5.0dip</dimen>
+    <dimen name="table_indicator_count_padding">10dp</dimen>
+    <dimen name="order_operation_option_personcount">30sp</dimen>
+    <dimen name="button_order_fragment_addquantity_paddingtop">20dip</dimen>
+    <dimen name="select_promotion_item_padding">5dp</dimen>
+
+    <dimen name="dialog_shop_close_textsize_textview">25sp</dimen>
+    <dimen name="dialog_shop_close_textsize_edittext">30sp</dimen>
+
+    <!-- place_fragment -->
+    <dimen name="place_fragment_gridview_hSpacing">10dp</dimen>
+    <dimen name="place_fragment_gridview_vSpacing">20dp</dimen>
+    <dimen name="coupon_service_num_dialog_width">100.0dip</dimen>
+    <dimen name="coupon_service_num_dialog_height">75.0dip</dimen>
+
+    <!-- member -->
+    <dimen name="query_recharge_member_margin">300.0dip</dimen>
+    <dimen name="recharge_op_space">20dip</dimen>
+
+    <!-- table_manage -->
+    <dimen name="table_manage_button_horizontal_margin">250dip</dimen>
+    <dimen name="table_manage_button_vertical_margin">120dip</dimen>
+
+</resources>

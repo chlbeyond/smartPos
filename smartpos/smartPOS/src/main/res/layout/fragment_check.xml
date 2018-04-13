@@ -1,0 +1,1212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutCheck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:background="@color/White"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/TextView20"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="餐桌:" />
+
+                <TextView
+                    android:id="@+id/textViewTableName"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/TextView16"
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="开台人:" />
+
+                <TextView
+                    android:id="@+id/textViewTableWaiter"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="王小儿" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="消费:" />
+
+                <TextView
+                    android:id="@+id/textViewTableExpend"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="服务费:" />
+
+                <TextView
+                    android:id="@+id/textViewTableServiceCharge"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0.00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:text="最低消费:" />
+
+                <TextView
+                    android:id="@+id/textViewTableMinCharge"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="低消差:" />
+
+                <TextView
+                    android:id="@+id/textViewTableMinPay"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0.00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1.6"
+                    android:gravity="left"
+                    android:text="优惠减免:" />
+
+                <TextView
+                    android:id="@+id/textViewTablePromotion"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/OrderTopLeftFontLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="抹零:" />
+
+                <TextView
+                    android:id="@+id/textViewTableNoCents"
+                    style="@style/OrderTopLeftFontField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="0.00" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/order_list_header">
+
+            <TextView
+                android:id="@+id/TextView06"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:text="@string/order_number" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2.5"
+                android:gravity="left"
+                android:text="@string/order_name" />
+
+            <TextView
+                android:id="@+id/TextView08"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".8"
+                android:gravity="right"
+                android:text="@string/order_quantity" />
+
+            <TextView
+                android:id="@+id/TextView07"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:gravity="right"
+                android:text="@string/order_price" />
+
+            <TextView
+                android:id="@+id/TextView11"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="@string/order_net_amount" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCheckOrderList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/order_bottom_left_bg"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listViewCheckOrder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:focusable="false"
+                android:focusableInTouchMode="false"></ListView>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/order_list_header">
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="行" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="收银方式" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="金额" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:gravity="right"
+                android:text="找零" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/OrderBottomLeftFontHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="凭证号" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCheckBottomLeft"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="@color/White"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listViewCheckPayment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:focusableInTouchMode="false"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkLinearLayoutContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/White"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <LinearLayout
+                    android:id="@+id/buttonCheckVerifyMember"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/order_fragment_tablestatus_button"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/promotions" />
+
+                    <TextView
+                        android:id="@+id/textView_check_member_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/verify_member"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/check_fragment_promotion_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonCheckOnSale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/order_fragment_tablestatus_button"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/promotions" />
+
+                    <TextView
+                        android:id="@+id/textView_check_promotion_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="促销活动"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/check_fragment_promotion_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonCheckDiscount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/order_fragment_tablestatus_button"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/discount" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="折扣方案"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/check_fragment_promotion_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonCheckServiceCharge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/order_fragment_tablestatus_button"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageCheckServiceCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/servicecharge" />
+
+                    <TextView
+                        android:id="@+id/textCheckServiceCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="服务费"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/check_fragment_promotion_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonCheckMinCharge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/order_fragment_tablestatus_button"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageViewCheckMinCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mincharge" />
+
+                    <TextView
+                        android:id="@+id/textViewCheckMinCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最低消费"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/check_fragment_promotion_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/TextView19"
+                        style="@style/CheckFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1.6"
+                        android:text="应收"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+
+                    <TextView
+                        android:id="@+id/textViewCheckPayable"
+                        style="@style/CheckFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="2.4"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+
+                    <TextView
+                        android:id="@+id/TextView13"
+                        style="@style/CheckFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1.6"
+                        android:text="已收"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+
+                    <TextView
+                        android:id="@+id/textViewCheckPaid"
+                        style="@style/CheckFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="2.4"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+
+                    <TextView
+                        android:id="@+id/TextView12"
+                        style="@style/CheckFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1.6"
+                        android:text="待收"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+
+                    <TextView
+                        android:id="@+id/textViewCheckUnPaid"
+                        style="@style/CheckFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="2.4"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.07"
+                    android:background="#67788D"></TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow_memberInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:weightSum="13">
+
+                    <TextView
+                        android:id="@+id/textViewExraInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="@dimen/check_fragment_detail_text" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPayment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/payment_pad_shape"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/tableRowCheckPaymentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/check_round_layout_shape"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewCheckPaymentType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:text="现金"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/fragment_check_money" />
+
+                    <TextView
+                        android:id="@+id/textViewCheckPaying"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="2"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/fragment_check_money" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="找零"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/fragment_check_money" />
+
+                    <TextView
+                        android:id="@+id/textViewCheckPayChange"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/fragment_check_money" />
+                </TableRow>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TableLayout
+                        android:id="@+id/TableLayout1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.3">
+
+                        <TableRow
+                            android:id="@+id/tableRow6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentTypeCash"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/check_button_cash" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3dp"
+                                    android:text="现金"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentTypeBankCard"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/check_button_bankcard" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:paddingLeft="3dp"
+                                    android:text="银行卡"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPayMentTypeMemeber"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_chargecard_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:paddingLeft="3dp"
+                                    android:text="充值卡"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentTypeVoucher"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_voucher_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:paddingLeft="3dp"
+                                    android:text="代金券"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentTypeAliPay"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_alipay_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:paddingLeft="3dp"
+                                    android:text="支付宝"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPayMentTypeWeChat"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_wechat_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3dp"
+                                    android:text="微信"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/layoutPaymentMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentTypeFree"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_free_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3dp"
+                                    android:text="免单"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentTypeCredit"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_credit_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3dp"
+                                    android:text="挂单"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/buttonCheckPaymentOther"
+                                style="@style/CheckPaymentMethodButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:paddingRight="3dp"
+                                    android:src="@drawable/payment_credit_selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3dp"
+                                    android:text="其他"
+                                    android:textColor="@drawable/payment_textcolor_selector"
+                                    android:textSize="@dimen/title_text2" />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/layoutPaymentCaculator"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TableRow
+                            android:id="@+id/TableRow08"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad7"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="7" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad8"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="8" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad9"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="9" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPadDelete"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="C" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad4"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="4" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad5"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="5" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad6"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="6" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPadCancel"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="清除" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad1"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="1" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad2"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="2" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad3"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="3" />
+
+                            <Button
+                                android:id="@+id/buttonCheckFullPayment"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="全额" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad0"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPad00"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="00" />
+
+                            <Button
+                                android:id="@+id/buttonCheckDigitPadDot"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="." />
+
+                            <Button
+                                android:id="@+id/buttonCheckConfirm"
+                                style="@style/CheckCaculatorButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/table_report_button_selector"
+                                android:enabled="false"
+                                android:text="@string/sure"
+                                android:textColor="@color/White" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutCheckPaymentOther"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+                <GridView
+                    android:id="@+id/gridViewCheckPaymentOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="8dp"
+                    android:numColumns="5"
+                    android:padding="10dp"
+                    android:verticalSpacing="8dp"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/TableRow091"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/order_fragment_tablestatus_button"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/tablestatus" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="台 况"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/handover_preview" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonCheckPrePrint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_fragment_preprint_button"
+                android:enabled="false"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="预打印  F5"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/handover_preview" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonChecktempPay"
+                style="@style/MainActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="暂结"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/buttonCheckDone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/order_fragment_check_button"
+                android:enabled="false"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="结账  F6 "
+                    android:textColor="#fff"
+                    android:textSize="@dimen/handover_preview" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonCheckCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/order_fragment_tablestatus_button"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="台况  ESC"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/handover_preview" />
+            </LinearLayout>
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

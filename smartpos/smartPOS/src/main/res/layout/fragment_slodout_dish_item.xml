@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:background="@color/op_dialog_button_layout_bg"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tableRowSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"></TableRow>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <GridView
+        android:id="@+id/gridViewOrderDish"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalScrollView1"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:columnWidth="@dimen/order_fragment_goods_item_columnWidth"
+        android:focusable="false"
+        android:horizontalSpacing="@dimen/order_fragment_gridview_horizontalSpacing"
+        android:nextFocusDown="@+id/gridViewOrderDish"
+        android:nextFocusLeft="@+id/gridViewOrderDish"
+        android:nextFocusRight="@+id/gridViewOrderDish"
+        android:nextFocusUp="@+id/tableRowSubCategory"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/order_fragment_gridview_verticalSpacing"></GridView>
+
+</RelativeLayout>
